@@ -1,425 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bewaarde huizen lijst </title>
-    <link rel="stylesheet" href="stylesv2h.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bewaarde huizen lijst </title>
+        <link rel="stylesheet" href="styles/styles2.css">
 
-</head>
-<body>
-  
-  <header>
-    <h6> HEADER </h6>
-  </header>
-
-    <main>
-      <!-- <article class="colour-modes">
-        <button class="theme-toggle">
-        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" fill="var(--clr-orange)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z" fill="var(--clr-orange)"/></svg>
-        </button>
-        <button class="theme-toggle-contrast">
-        <svg width="25px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="var(--clr-orange)" fill-rule="evenodd" d="M68,121 C72.9705627,121 77,116.970563 77,112 C77,107.029437 72.9705627,103 68,103 C63.0294373,103 59,107.029437 59,112 C59,116.970563 63.0294373,121 68,121 Z M68,119.8 C72.2313475,119.8 75.8,116.307821 75.8,112 C75.8,108.076069 72.6281738,104.2 68,104.2 L68,119.8 Z" transform="matrix(-1 0 0 1 77 -103)"/></svg>
-        </button>
-    </article> -->
+    </head>
+    <body>
     
-        <a href="index.html"><img src="assets/back.png" alt="terug" height="36"></a>  
-        <h1> Randstad </h1>
-        <form>
-            <!-- buttons, bijdragers (verwijst naar profiel) -->
-            <button type="button"> <svg class="account-human-1" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="svg-human-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
-            <button type="button"> <svg class="account-human-2" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="svg-human-2"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
-            <button type="button"> <svg class="account-human-3" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48" class="svg-human-3"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
-            <!-- pop-up  -->
-            <button type="button" class="add-user" onclick="openPopup()"> + </button> 
-            <!-- <title> Bijdrager uitnodigen </title> -->
-            <div class="popup" id="popup">
-              <p > Voeg een bijdrager toe aan uw lijst </p>
-              <input type="email" placeholder="Email">
-              <button class="add-user-button" type="submit" onclick="openPopup()"> Bijdrager toevoegen </button>
-              <button class="close-button">&times;</button>
-            </div>
-        </form>
+        <header>
+            <h6> HEADER </h6>
+        </header>
 
-        <script> 
-          let popup = document.getElementById("popup");
-
-          function openPopup(){
-            popup.classList.add("open-popup");
-          }
-
-          function closePopup(){
-            popup.classList.remove("open-popup");
-          }
-          
-        </script>
-        <p> 7 huizen opgeslagen </p>
-            
-
-        <article>
-            <!-- lijst met alle bewaarde huizen -->
-            <div class="house-1">
-                <a href="https://www.funda.nl/koop/valburg/huis-88650473-broekstraat-56/"><img src="https://d1zsattj8yq64o.cloudfront.net/media/15049031/1200x800_fit.jpg" width="280" height="201" alt="foto van Broekstraat 56D">
-              <div class="adres">
-                <h3> Broekstraat 56 D </h3> 
-                </a>
-                <ul>
-                    <li> 5996 BC Maasbree </li>
-                    <li> € 845.000,- k.k. </li>
-                    <li> 329 m² </li>
-                    <li> 11 kamers </li>
-                    <li> <a href="https://www.funda.nl/makelaars/zetten/62043-ras-makelaars/" >Ras Makelaars </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                    <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="house-2">
-                <a href="https://www.funda.nl/koop/melick/huis-88409775-wintergaats-12/"><img src="https://cloud.funda.nl/valentina_media/176/908/478_1080x720.jpg" width="280" height="201" alt="foto van Wintergaats 12">
-              <div class="adres">
-                <h3> Wintergaats 12 </h3>
-                </a>
-                <ul>
-                    <li> 6074 DM Melick </li>
-                    <li> € 869.500,- k.k. </li>
-                    <li> 895 m² </li>
-                    <li> 8 kamers </li>
-                    <li> <a href="https://www.funda.nl/makelaars/venlo/62963-brouwers-makelaars/" > Brouwers Makelaars </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-            
-            <div class="house-3">
-                <a href="https://www.funda.nl/koop/leiden/huis-88608741-amperestraat-6/"><img src="https://cloud.funda.nl/valentina_media/180/746/920_1440x960.jpg" width="280" height="201" alt="foto van Ampèrestraat 6"> 
-              <div class="adres">
-                <h3> Ampèrestraat 6 </h3>
-                </a>
-                <ul>
-                    <li> 2316 DG Leiden </li>
-                    <li> € 965.00,- k.k. </li>
-                    <li> 202 m² </li>
-                    <li> 3 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/leiden/63613-ivo-van-der-leek-makelaardij/"> Ivo van der Leek Makelaardij </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="house-4">
-                <a href="https://www.funda.nl/koop/bennekom/huis-88602119-hullenberglaan-19/"><img src="https://cloud.funda.nl/valentina_media/180/468/364_1440x960.jpg" width="280" height="201" alt="foto van Hullenberglaan 19"> 
-              <div class="adres">
-                <h3> Hullenberglaan 19  </h3>
-                </a>
-                <ul>
-                    <li> 6721 AL Bennekom </li>
-                    <li> € 1.375.000,- k.k. </li>
-                    <li> 250 m² </li>
-                    <li> 4 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/bennekom/60016-makelaardij-jacobs/"> Makelaardij Jacobs </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            <div class="house-5">
-                <a href="https://www.funda.nl/koop/amstelveen/huis-42246664-eleanor-rooseveltlaan-190/"><img src="https://cloud.funda.nl/valentina_media/180/386/487_1440x960.jpg" width="280" height="201" alt="foto 1 van Eleanor Rooseveltlaan 190">
-              <div class="adres">
-                <h3> Eleanor Rooseveltlaan 190  </h3>
-                </a>
-                <ul>
-                    <li> Heldenbuurt </li>
-                    <li> € 1.325.000,- k.k. </li>
-                    <li> 471 m² </li>
-                    <li> 4 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/amstelveen/24358-voorma-en-millenaar-makelaars-taxateurs-og/"> Voorma & Millenaar makelaars </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-            
-            <div class="house-6">
-                <a href="https://www.funda.nl/koop/bardudvarnok/huis-88500224-nagypuszta-lakotelep-25/"><img src="https://cloud.funda.nl/valentina_media/176/206/643_1440x960.jpg" width="280" height="201" alt="foto van Nagypuszta lakótelep 25">
-              <div class="adres">
-                <h3> Nagypuszta lakótelep 25  </h3>
-                </a>
-                <ul>
-                    <li> 7478 Bardudvarnok, Hongarije </li>
-                    <li> € 495.000,- k.k. </li>
-                    <li> 310 m² </li>
-                    <li> 4 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/capelle-aan-den-ijssel/66113-amstel-housing-rotterdam/"> Amstel Housing Rotterdam </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            <div class="house-7">
-                <a href="https://www.funda.nl/europe/bosnie-en-herzegovina/huis-88635390-brestovci-524/"><img src="https://cloud.funda.nl/valentina_media/177/662/816_1440x960.jpg" width="280" height="201" alt="foto van Brestovci 524">
-              <div class="adres">
-                <h3> Brestovci 524 </h3>
-                </a>
-                <ul>
-                    <li> Buzim, Bosinië en Herzegovina </li>
-                    <li> € 250.000,- k.k. </li>
-                    <li> 203 m² </li>
-                    <li> 4 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/capelle-aan-den-ijssel/66113-amstel-housing-rotterdam/"> Mijnhuisverkoopikzelf.nl </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            <div class="house-8">
-                <a href="https://www.funda.nl/koop/kaavi/huis-88606092-kangasniementie-74/"><img src="https://cloud.funda.nl/valentina_media/180/636/371_1440x960.jpg" width="280" height="201" alt="foto 1 van Kangasniementie 74">
-              <div class="adres">
-                <h3> Kangasniementie 74 </h3>
-                </a>
-                <ul>
-                    <li> 73670, Finland </li>
-                    <li> € 260.000,- k.k. </li>
-                    <li> 125 m² </li>
-                    <li> 3 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/eelde/81801-hp-makelaardij-en-vastgoedbeheer/"> HP Maakelaardij & Vastgoedbeheer </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            <div class="house-9">
-                <a href="https://www.funda.nl/koop/nunspeet/huis-42291449-munnik-18/"><img src="https://cloud.funda.nl/valentina_media/178/434/463_1440x960.jpg" width="280" height="201" alt="foto van Munnik 18"> 
-              <div class="adres">
-                <h3> Munnik 18 </h3>
-                </a>
-                <ul>
-                    <li> 8071 TK Nunspeet </li>
-                    <li> € 849.000,- k.k. </li>
-                    <li> 146 m² </li>
-                    <li> 4 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/nunspeet/23124-makelaardij-van-de-weerd/"> Maakelaardij Van de Weerd </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="house-10">
-                <a href="https://www.funda.nl/koop/lekkerkerk/huis-42203219-randweg-2/"><img src="https://cloud.funda.nl/valentina_media/178/957/131_1440x960.jpg" width="280" height="201" alt="foto van Randweg 2"> 
-              <div class="adres">
-                <h3> Randweg 2 </h3>
-                </a>
-                <ul>
-                    <li> 2941 CG Lekkerkerk </li>
-                    <li> € 1.150.000,- k.k. </li>
-                    <li> 247 m² </li>
-                    <li> 5 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/bergambacht/7104-van-egmond-makelaardij/"> Van Egmond Maakelaardij </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-
-            <div class="house-11">
-                <a href="https://www.funda.nl/koop/voorst-gem-voorst/huis-42234977-gravenstraat-30/"><img src="https://cloud.funda.nl/valentina_media/180/317/849_1440x960.jpg" width="280" height="201" alt="foto van Gravenstraat 30"> 
-              <div class="adres">
-                <h3> Gravenstraat 30 </h3>
-                </a>
-                <ul>
-                    <li> 7383 RK Voorst </li>
-                    <li> € 650.000,- k.k. </li>
-                    <li> 256 m² </li>
-                    <li> 9 kamers </li>
-                    <li><a href="https://www.funda.nl/makelaars/beekbergen/1076-wilbrink-makelaardij-og/"> Wilbrink Maakelaardij </a></li>
-                </ul>
-              </div>
-              <div class="comment-section">
-                <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
-                <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48" class="mr-1 -mt-1"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
-                <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
-                  <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20em"> </button>                
-                </div>
-              </div>
-            </div>
-        </article>
-    </main>
-
-    <footer>
-        <!-- footer, navigatie -->
-        <div class="diensten">
-        <h4> Diensten </h4>
-        <nav>
-          <ul>
-            <li><a href="https://www.funda.nl/producten-en-diensten/verkoop-je-huis-op-funda/" class="">Plaats je huis op funda</a></li>
-            <li><a href="https://www.funda.nl/makelaar-zoeken/" class="appfooter-Makelaar-link">Zoek een NVM-makelaar</a></li>
-            <li><a href="https://www.funda.nl/koop/bladeren/" class="">Bladeren door aanbod</a></li>
-            <li><a href="https://www.funda.nl/mijn-huis-toevoegen/" class="waardecheck-trafficdriver">Wat is mijn woning waard?</a></li>
-          </ul>
-        </nav>
-        </div>
-
-        <div class="informatie">
-        <h4> Informatie </h4>
-        <nav>
-          <ul> 
-            <li><a href="https://help.funda.nl/hc/nl/?utm_source=funda&amp;utm_medium=footer" class="" target="_blank">Vraag &amp; antwoord</a></li>
-            <li><a href="https://www.funda.nl/funda-index/funda-index/" class="">Funda Index</a></li>
-            <li><a href="https://www.funda.nl//meer-weten/kopen/" class="trafficdriver-footer-hoekoopikeenhuis">Alles over een huis kopen</a></li>
-            <li><a href="https://www.funda.nl//meer-weten/verkopen/" class="trafficdriver-footer-hoekoopikeenhuis">Verkoop je huis</a></li>
-            <li><a href="https://www.funda.nl//zoekbetervindmeer/" class="">Hoe zoek ik op funda?</a></li>
-          </ul>
-        </nav>
-        </div>
-
-        <div class="makelaars">
-        <h4> Makelaars </h4>
-        <nav>
-          <ul> 
-            <li><a href="https://www.fundadesk.nl" class="">Funda desk</a></li>
-            <li><a href="https://www.funda.nl/voormakelaars/verdieping/" class="">Tips, trends &amp; nieuws</a></li>
-            <li><a href="https://www.funda.nl/voormakelaars/leads/" class="">Leads</a></li>
-            <li><a href="https://www.funda.nl/voormakelaars/producten/" class="">Producten</a></li>
-            <li><a href="https://www.funda.nl/voormakelaars/events-meetups/" class="">Events &amp; meetups</a></li>
-          </ul>  
-        </nav>
-        </div>
-
-        <div class="over-ons">
-        <h4> Over ons </h4>
-        <nav>
-          <ul>
-            <li><a href="https://www.funda.nl//over/" class="">Over funda</a></li>
-            <li><a href="https://www.funda.nl//contact/" class="">Contact</a></li>
-            <li><a href="https://jobs.funda.nl/l/nl/" class="">Werken bij funda</a></li>
-            <li><a href="https://www.funda.nl//adverteren/" class="">Adverteren</a></li>
-            <li><a href="https://www.funda.nl//meer-weten/redactioneel-beleid-funda/" class="">Redactioneel beleid</a></li>
-          </ul>
-        </nav>
-        </div>
+        <main>
+        <!-- <article class="colour-modes">
+            <button class="theme-toggle">
+            <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12Z" fill="var(--clr-orange)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z" fill="var(--clr-orange)"/></svg>
+            </button>
+            <button class="theme-toggle-contrast">
+            <svg width="25px" height="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path fill="var(--clr-orange)" fill-rule="evenodd" d="M68,121 C72.9705627,121 77,116.970563 77,112 C77,107.029437 72.9705627,103 68,103 C63.0294373,103 59,107.029437 59,112 C59,116.970563 63.0294373,121 68,121 Z M68,119.8 C72.2313475,119.8 75.8,116.307821 75.8,112 C75.8,108.076069 72.6281738,104.2 68,104.2 L68,119.8 Z" transform="matrix(-1 0 0 1 77 -103)"/></svg>
+            </button>
+        </article> -->
         
-        <hr>
+            <a href="index.html"><img src="assets/back.png" alt="terug" height="36"></a>  
+            <h1> Randstad </h1>
+            <form>
+                <!-- buttons, bijdragers (verwijst naar profiel) -->
+                <button type="button"> <svg class="account-human-1" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <button type="button"> <svg class="account-human-2" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <button type="button"> <svg class="account-human-3" xmlns="http://www.w3.org/2000/svg" height="48" fill="#0071b3" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <!-- pop-up  -->
+                <button type="button" class="add-user" onclick="openPopup()"> + </button> 
+                <!-- <title> Bijdrager uitnodigen </title> -->
+                <div class="popup" id="popup">
+                    <p > Voeg een bijdrager toe aan uw lijst </p>
+                    <input type="email" placeholder="Email">
+                    <button class="add-user-button" type="submit" onclick="openPopup()"> Bijdrager toevoegen </button>
+                    <button class="close-button">&times;</button>
+                </div>
+            </form>
 
-        <!-- footer socials, copyright, taal -->
-        <ul class="socials">
-              <li>
-                <a href="https://www.facebook.com/funda" target="_blank" aria-label="Facebook">
-                      <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op facebook.</title><path d="M19 17.08h-4.23v6.84H19V44h8V23.83h5.62l.6-6.75H27v-3.85c0-1.59.32-2.22 1.86-2.22h4.36V4h-5.57c-6 0-8.7 2.64-8.7 7.69z"></path></svg></span>
-                  </a>
-              </li>
-              <li>
-                <a href="https://www.twitter.com/funda" target="_blank" aria-label="X">
-                      <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op twitter.</title><path d="M 28.570312 20.34375 L 46.441406 0 L 42.210938 0 L 26.683594 17.660156 L 14.292969 0 L 0 0 L 18.742188 26.707031 L 0 48.039062 L 4.234375 48.039062 L 20.617188 29.386719 L 33.707031 48.039062 L 48 48.039062 M 5.761719 3.125 L 12.265625 3.125 L 42.207031 45.066406 L 35.699219 45.066406 "></path></svg></span>
-                  </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/funda.nl/" target="_blank" aria-label="Instagram">
-                      <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op instagram.</title><path d="M24 7.61c5.34 0 6 0 8.08.12 5.42.25 8 2.82 8.2 8.2.1 2.11.11 2.74.11 8.08s0 6-.11 8.08c-.25 5.37-2.77 8-8.2 8.2-2.11.1-2.74.12-8.08.12s-6 0-8.08-.12c-5.43-.25-8-2.83-8.2-8.2C7.62 30 7.6 29.34 7.6 24s0-6 .12-8.08c.25-5.38 2.77-8 8.2-8.2 2.08-.09 2.74-.11 8.08-.11zM24 4c-5.43 0-6.11 0-8.24.12-7.27.33-11.31 4.36-11.64 11.63C4 17.89 4 18.57 4 24s0 6.11.12 8.25c.33 7.26 4.36 11.3 11.63 11.63 2.13.1 2.81.12 8.25.12s6.11 0 8.25-.12c7.26-.33 11.3-4.36 11.63-11.63.12-2.14.12-2.82.12-8.25s0-6.11-.12-8.24c-.33-7.26-4.36-11.3-11.63-11.64C30.11 4 29.43 4 24 4zm0 9.73A10.27 10.27 0 1034.27 24 10.27 10.27 0 0024 13.73zm0 16.94A6.67 6.67 0 1130.67 24 6.67 6.67 0 0124 30.67zm10.68-19.74a2.4 2.4 0 102.4 2.4 2.4 2.4 0 00-2.4-2.4z"></path></svg></span>
-                  </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/funda" target="_blank" aria-label="YouTube">
-                      <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op youtube.</title><path d="M36.69 9.31c-6-.41-19.38-.41-25.38 0C4.81 9.75 4 13.67 4 24s.81 14.25 7.31 14.69c6 .41 19.38.41 25.38 0C43.19 38.25 44 34.33 44 24s-.81-14.25-7.31-14.69zM19 30.67V17.33L32.33 24z"></path></svg></span>
-                  </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/company/funda" target="_blank" aria-label="LinkedIn">
-                      <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M4.8 17.33h8.25V44H4.8z"></path><ellipse cx="8.89" cy="8.92" rx="4.88" ry="4.92"></ellipse><title>Volg ons op linkedin.</title><path d="M34.29 16.52a9.3 9.3 0 00-8 4.4v-3.59h-7.95V44h7.92V30c0-3.75 1.73-6 5-6 3 0 4.49 2.14 4.49 6v14H44V27.12c0-7.12-4.06-10.6-9.71-10.6z"></path></svg></span>
-                  </a>
-              </li>
-      </ul>
-          </ul>
-        
-        <div class="center-footer">
-          <p class="copyright">© 2001-2023 funda</p>
-          <ul class="copyright-2">
-             <li>
-                <span class="bulletpoint">•</span>
-                <a href="https://www.funda.nl//privacybeleid/">Privacy</a> 
-            </li>
-            <li> 
-                <span class="bulletpoint">•</span>
-                <a href="https://www.funda.nl//cookiebeleid/">Cookies</a>
-            </li>
-            <li>
-                <span class="bulletpoint">•</span>
-                <a href="https://www.funda.nl//gebruiksvoorwaarden/">Voorwaarden</a>
-            </li>
-          </ul>
-        </div>
-              
-        <div class="switch-language">
-            <label for="langswitch" class="langswitch">Taal</label>
-        <div class="taalswitchen">
-            <select data-footer-lang-switch="" id="langSwitch" class="taalswitch">
-                <option value="en">
-                    English
-                </option>
-                <option value="nl">
-                    Nederlands
-                </option>
-            </select>
-        </div>
-    </footer>
-    <script src="./main.js"></script>
-</body>
+            <script> 
+                let popup = document.getElementById("popup");
+
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+            
+            </script>
+
+            <p> 7 huizen opgeslagen </p>
+                
+            <article>
+                <!-- lijst met alle bewaarde huizen -->
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/valburg/huis-88650473-broekstraat-56/">
+                        <img src="https://d1zsattj8yq64o.cloudfront.net/media/15049031/1200x800_fit.jpg" width="280" height="201" alt="foto van Broekstraat 56D">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/valburg/huis-88650473-broekstraat-56/">Broekstraat 56 D</a></h3>
+                        <ul>
+                            <li> 5996 BC Maasbree </li>
+                            <li> € 845.000,- k.k. </li>
+                            <li> 329 m² </li>
+                            <li> 11 kamers </li>
+                            <li> <a href="https://www.funda.nl/makelaars/zetten/62043-ras-makelaars/" >Ras Makelaars </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/melick/huis-88409775-wintergaats-12/">
+                        <img src="https://cloud.funda.nl/valentina_media/176/908/478_1080x720.jpg" width="280" height="201" alt="foto van Wintergaats 12">
+                    </a>
+                    <div class="adres">
+                        <h3> <a href="https://www.funda.nl/koop/melick/huis-88409775-wintergaats-12/">Wintergaats 12 </a></h3>
+                        <ul>
+                            <li> 6074 DM Melick </li>
+                            <li> € 869.500,- k.k. </li>
+                            <li> 895 m² </li>
+                            <li> 8 kamers </li>
+                            <li> <a href="https://www.funda.nl/makelaars/venlo/62963-brouwers-makelaars/" > Brouwers Makelaars </a></li>
+                        </ul>
+                </div>
+                <div class="comment-section">
+                    <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                    <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                    <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                    <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button>                
+                    </div>
+                </div>
+                </div>
+                
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/leiden/huis-88608741-amperestraat-6/">
+                        <img src="https://cloud.funda.nl/valentina_media/180/746/920_1440x960.jpg" width="280" height="201" alt="foto van Ampèrestraat 6">
+                    </a> 
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/leiden/huis-88608741-amperestraat-6/"> Ampèrestraat 6 </a></h3>
+                        <ul>
+                            <li> 2316 DG Leiden </li>
+                            <li> € 965.00,- k.k. </li>
+                            <li> 202 m² </li>
+                            <li> 3 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/leiden/63613-ivo-van-der-leek-makelaardij/"> Ivo van der Leek Makelaardij </a></li>
+                        </ul>
+                </div>
+                <div class="comment-section">
+                    <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                    <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                    <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                    <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button>                
+                    </div>
+                </div>
+                </div>
+                
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/bennekom/huis-88602119-hullenberglaan-19/">
+                        <img src="https://cloud.funda.nl/valentina_media/180/468/364_1440x960.jpg" width="280" height="201" alt="foto van Hullenberglaan 19">
+                    </a> 
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/bennekom/huis-88602119-hullenberglaan-19/"> Hullenberglaan 19 </a></h3>
+                        <ul>
+                            <li> 6721 AL Bennekom </li>
+                            <li> € 1.375.000,- k.k. </li>
+                            <li> 250 m² </li>
+                            <li> 4 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/bennekom/60016-makelaardij-jacobs/"> Makelaardij Jacobs </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                    <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                    <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                    <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                    <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button>                
+                    </div>
+                </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/amstelveen/huis-42246664-eleanor-rooseveltlaan-190/">
+                        <img src="https://cloud.funda.nl/valentina_media/180/386/487_1440x960.jpg" width="280" height="201" alt="foto 1 van Eleanor Rooseveltlaan 190">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/amstelveen/huis-42246664-eleanor-rooseveltlaan-190/"> Eleanor Rooseveltlaan 190 </a></h3>
+                        <ul>
+                            <li> Heldenbuurt </li>
+                            <li> € 1.325.000,- k.k. </li>
+                            <li> 471 m² </li>
+                            <li> 4 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/amstelveen/24358-voorma-en-millenaar-makelaars-taxateurs-og/"> Voorma & Millenaar makelaars </a></li>
+                        </ul>
+                </div>
+                <div class="comment-section">
+                    <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                    <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                    <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                    <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                </div>
+                </div>
+                
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/bardudvarnok/huis-88500224-nagypuszta-lakotelep-25/">
+                        <img src="https://cloud.funda.nl/valentina_media/176/206/643_1440x960.jpg" width="280" height="201" alt="foto van Nagypuszta lakótelep 25">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/bardudvarnok/huis-88500224-nagypuszta-lakotelep-25/">Nagypuszta lakótelep 25 </a></h3>
+                        <ul>
+                            <li> 7478 Bardudvarnok, Hongarije </li>
+                            <li> € 495.000,- k.k. </li>
+                            <li> 310 m² </li>
+                            <li> 4 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/capelle-aan-den-ijssel/66113-amstel-housing-rotterdam/"> Amstel Housing Rotterdam </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/europe/bosnie-en-herzegovina/huis-88635390-brestovci-524/">
+                        <img src="https://cloud.funda.nl/valentina_media/177/662/816_1440x960.jpg" width="280" height="201" alt="foto van Brestovci 524">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/europe/bosnie-en-herzegovina/huis-88635390-brestovci-524/"> Brestovci 524 </a></h3>
+                        <ul>
+                            <li> Buzim, Bosinië en Herzegovina </li>
+                            <li> € 250.000,- k.k. </li>
+                            <li> 203 m² </li>
+                            <li> 4 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/capelle-aan-den-ijssel/66113-amstel-housing-rotterdam/"> Mijnhuisverkoopikzelf.nl </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/kaavi/huis-88606092-kangasniementie-74/">
+                        <img src="https://cloud.funda.nl/valentina_media/180/636/371_1440x960.jpg" width="280" height="201" alt="foto 1 van Kangasniementie 74">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/kaavi/huis-88606092-kangasniementie-74/"> Kangasniementie 74 </a></h3>
+                        <ul>
+                            <li> 73670, Finland </li>
+                            <li> € 260.000,- k.k. </li>
+                            <li> 125 m² </li>
+                            <li> 3 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/eelde/81801-hp-makelaardij-en-vastgoedbeheer/"> HP Maakelaardij & Vastgoedbeheer </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/nunspeet/huis-42291449-munnik-18/">
+                        <img src="https://cloud.funda.nl/valentina_media/178/434/463_1440x960.jpg" width="280" height="201" alt="foto van Munnik 18">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/kaavi/huis-88606092-kangasniementie-74/"> Munnik 18 </a></h3>
+                        <ul>
+                            <li> 8071 TK Nunspeet </li>
+                            <li> € 849.000,- k.k. </li>
+                            <li> 146 m² </li>
+                            <li> 4 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/nunspeet/23124-makelaardij-van-de-weerd/"> Maakelaardij Van de Weerd </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+
+                
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/lekkerkerk/huis-42203219-randweg-2/">
+                        <img src="https://cloud.funda.nl/valentina_media/178/957/131_1440x960.jpg" width="280" height="201" alt="foto van Randweg 2">
+                    </a> 
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/lekkerkerk/huis-42203219-randweg-2/"> Randweg 2 </a></h3>
+                        <ul>
+                            <li> 2941 CG Lekkerkerk </li>
+                            <li> € 1.150.000,- k.k. </li>
+                            <li> 247 m² </li>
+                            <li> 5 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/bergambacht/7104-van-egmond-makelaardij/"> Van Egmond Maakelaardij </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <a href="https://www.funda.nl/koop/voorst-gem-voorst/huis-42234977-gravenstraat-30/">
+                        <img src="https://cloud.funda.nl/valentina_media/180/317/849_1440x960.jpg" width="280" height="201" alt="foto van Gravenstraat 30">
+                    </a>
+                    <div class="adres">
+                        <h3><a href="https://www.funda.nl/koop/voorst-gem-voorst/huis-42234977-gravenstraat-30/">Gravenstraat 30 </a></h3>
+                        <ul>
+                            <li> 7383 RK Voorst </li>
+                            <li> € 650.000,- k.k. </li>
+                            <li> 256 m² </li>
+                            <li> 9 kamers </li>
+                            <li><a href="https://www.funda.nl/makelaars/beekbergen/1076-wilbrink-makelaardij-og/"> Wilbrink Maakelaardij </a></li>
+                        </ul>
+                    </div>
+                    <div class="comment-section">
+                        <div class="msg1"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Grote tuin. </div>
+                        <div class="msg2"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> Leuke buurt! </div>
+                        <div class="newmsg"><input type="text" placeholder="Typ hier uw opmerking...">
+                            <button class="place-comment" type="button"> <img src="assets/connection (1).png" alt="plaatsen" height="20"> </button></div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <!-- footer, navigatie -->
+            <div class="diensten">
+                <h4> Diensten </h4>
+                <nav>
+                <ul>
+                    <li><a href="https://www.funda.nl/producten-en-diensten/verkoop-je-huis-op-funda/" class="">Plaats je huis op funda</a></li>
+                    <li><a href="https://www.funda.nl/makelaar-zoeken/" class="appfooter-Makelaar-link">Zoek een NVM-makelaar</a></li>
+                    <li><a href="https://www.funda.nl/koop/bladeren/" class="">Bladeren door aanbod</a></li>
+                    <li><a href="https://www.funda.nl/mijn-huis-toevoegen/" class="waardecheck-trafficdriver">Wat is mijn woning waard?</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <div class="informatie">
+                <h4> Informatie </h4>
+                <nav>
+                <ul> 
+                    <li><a href="https://help.funda.nl/hc/nl/?utm_source=funda&amp;utm_medium=footer" class="" target="_blank">Vraag &amp; antwoord</a></li>
+                    <li><a href="https://www.funda.nl/funda-index/funda-index/" class="">Funda Index</a></li>
+                    <li><a href="https://www.funda.nl//meer-weten/kopen/" class="trafficdriver-footer-hoekoopikeenhuis">Alles over een huis kopen</a></li>
+                    <li><a href="https://www.funda.nl//meer-weten/verkopen/" class="trafficdriver-footer-hoekoopikeenhuis">Verkoop je huis</a></li>
+                    <li><a href="https://www.funda.nl//zoekbetervindmeer/" class="">Hoe zoek ik op funda?</a></li>
+                </ul>
+                </nav>
+            </div>
+
+            <div class="makelaars">
+                <h4> Makelaars </h4>
+                <nav>
+                <ul> 
+                    <li><a href="https://www.fundadesk.nl" class="">Funda desk</a></li>
+                    <li><a href="https://www.funda.nl/voormakelaars/verdieping/" class="">Tips, trends &amp; nieuws</a></li>
+                    <li><a href="https://www.funda.nl/voormakelaars/leads/" class="">Leads</a></li>
+                    <li><a href="https://www.funda.nl/voormakelaars/producten/" class="">Producten</a></li>
+                    <li><a href="https://www.funda.nl/voormakelaars/events-meetups/" class="">Events &amp; meetups</a></li>
+                </ul>  
+                </nav>
+            </div>
+
+            <div class="over-ons">
+                <h4> Over ons </h4>
+                <nav>
+                <ul>
+                    <li><a href="https://www.funda.nl//over/" class="">Over funda</a></li>
+                    <li><a href="https://www.funda.nl//contact/" class="">Contact</a></li>
+                    <li><a href="https://jobs.funda.nl/l/nl/" class="">Werken bij funda</a></li>
+                    <li><a href="https://www.funda.nl//adverteren/" class="">Adverteren</a></li>
+                    <li><a href="https://www.funda.nl//meer-weten/redactioneel-beleid-funda/" class="">Redactioneel beleid</a></li>
+                </ul>
+                </nav>
+            </div>
+            
+            <hr>
+
+            <!-- footer socials, copyright, taal -->
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com/funda" target="_blank" aria-label="Facebook">
+                        <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op facebook.</title><path d="M19 17.08h-4.23v6.84H19V44h8V23.83h5.62l.6-6.75H27v-3.85c0-1.59.32-2.22 1.86-2.22h4.36V4h-5.57c-6 0-8.7 2.64-8.7 7.69z"></path></svg></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/funda" target="_blank" aria-label="X">
+                        <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op twitter.</title><path d="M 28.570312 20.34375 L 46.441406 0 L 42.210938 0 L 26.683594 17.660156 L 14.292969 0 L 0 0 L 18.742188 26.707031 L 0 48.039062 L 4.234375 48.039062 L 20.617188 29.386719 L 33.707031 48.039062 L 48 48.039062 M 5.761719 3.125 L 12.265625 3.125 L 42.207031 45.066406 L 35.699219 45.066406 "></path></svg></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/funda.nl/" target="_blank" aria-label="Instagram">
+                        <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op instagram.</title><path d="M24 7.61c5.34 0 6 0 8.08.12 5.42.25 8 2.82 8.2 8.2.1 2.11.11 2.74.11 8.08s0 6-.11 8.08c-.25 5.37-2.77 8-8.2 8.2-2.11.1-2.74.12-8.08.12s-6 0-8.08-.12c-5.43-.25-8-2.83-8.2-8.2C7.62 30 7.6 29.34 7.6 24s0-6 .12-8.08c.25-5.38 2.77-8 8.2-8.2 2.08-.09 2.74-.11 8.08-.11zM24 4c-5.43 0-6.11 0-8.24.12-7.27.33-11.31 4.36-11.64 11.63C4 17.89 4 18.57 4 24s0 6.11.12 8.25c.33 7.26 4.36 11.3 11.63 11.63 2.13.1 2.81.12 8.25.12s6.11 0 8.25-.12c7.26-.33 11.3-4.36 11.63-11.63.12-2.14.12-2.82.12-8.25s0-6.11-.12-8.24c-.33-7.26-4.36-11.3-11.63-11.64C30.11 4 29.43 4 24 4zm0 9.73A10.27 10.27 0 1034.27 24 10.27 10.27 0 0024 13.73zm0 16.94A6.67 6.67 0 1130.67 24 6.67 6.67 0 0124 30.67zm10.68-19.74a2.4 2.4 0 102.4 2.4 2.4 2.4 0 00-2.4-2.4z"></path></svg></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/funda" target="_blank" aria-label="YouTube">
+                        <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><title>Volg ons op youtube.</title><path d="M36.69 9.31c-6-.41-19.38-.41-25.38 0C4.81 9.75 4 13.67 4 24s.81 14.25 7.31 14.69c6 .41 19.38.41 25.38 0C43.19 38.25 44 34.33 44 24s-.81-14.25-7.31-14.69zM19 30.67V17.33L32.33 24z"></path></svg></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/funda" target="_blank" aria-label="LinkedIn">
+                        <span data-vue-container="" class="inline ml-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0071B3" role="presentation" viewBox="0 0 48 48" class="inline mr-1 -mt-1"><path d="M4.8 17.33h8.25V44H4.8z"></path><ellipse cx="8.89" cy="8.92" rx="4.88" ry="4.92"></ellipse><title>Volg ons op linkedin.</title><path d="M34.29 16.52a9.3 9.3 0 00-8 4.4v-3.59h-7.95V44h7.92V30c0-3.75 1.73-6 5-6 3 0 4.49 2.14 4.49 6v14H44V27.12c0-7.12-4.06-10.6-9.71-10.6z"></path></svg></span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="center-footer">
+                <p class="copyright">© 2001-2023 funda</p>
+                <ul class="copyright-2">
+                    <li>
+                        <span class="bulletpoint">•</span>
+                        <a href="https://www.funda.nl//privacybeleid/">Privacy</a> 
+                    </li>
+                    <li> 
+                        <span class="bulletpoint">•</span>
+                        <a href="https://www.funda.nl//cookiebeleid/">Cookies</a>
+                    </li>
+                    <li>
+                        <span class="bulletpoint">•</span>
+                        <a href="https://www.funda.nl//gebruiksvoorwaarden/">Voorwaarden</a>
+                    </li>
+                </ul>
+            </div>
+                
+            <div class="switch-language">
+                <label for="langswitch" class="langswitch">Taal</label>
+                <div class="taalswitchen">
+                    <select data-footer-lang-switch="" id="langSwitch" class="taalswitch">
+                        <option value="en"> English </option>
+                        <option value="nl"> Nederlands </option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
