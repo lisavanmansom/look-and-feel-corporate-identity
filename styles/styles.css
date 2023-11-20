@@ -1,0 +1,632 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Regular_2607783814[2339].woff2);
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Semibold_3872794340.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
+    font-weight: 400;
+}
+
+/* nav-styling */
+
+header {
+    background: var(--clr-orange);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    height: 4em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 2em;
+    gap: 30px;
+}
+
+.heart, .account-human{
+    color: #fff;
+    height: 2em;
+    margin: auto 5px;
+ 
+}
+.heart:hover {
+    color: #f60505;
+
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* mediaquery nav */
+@media (max-width:578px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        background-color: var(--clr-dark-orange);
+        flex-direction: column;
+        gap: 0;
+        left: -100%;
+        position: absolute;
+        text-align: center;
+        top: 60px;
+        transition: 0.8s;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    margin: 0;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    justify-content: center;
+}
+
+h1 {
+   justify-content: center;
+   display: flex;
+   padding: .5em 0 .5em 0;
+}
+
+:root {
+    --clr-dark: #1F2123;
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #dedede;
+    --clr-orange: #F7A100;
+    --clr-dark-orange: #DE9000;
+    --clr-icon: #DE9000;
+    --clr-blue:#0071B3;
+    --clr-heart: #f03c2f;
+    --clr-gray: #666666;
+}
+
+.dark-mode {
+    --clr-dark: #fff;
+    --clr-light: #1F2123;
+    --clr-block: #333;
+    --clr-blockhover: #4a4a4a;
+    --clr-blue:#60C5F8;
+    --clr-gray: #999999;
+}
+
+.contrast-mode {
+    --clr-dark: #1F2123;
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #999999;
+    --clr-orange: #53241B;
+    --clr-dark-orange: #321610;
+    --clr-icon: #53241B;
+    --clr-blue: #115D92;
+    --clr-heart: #DB1D10;
+    --clr-gray: #525252;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-orange);
+}
+
+.theme-toggle-contrast {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #F7A100;
+}
+
+.colour-modes {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 1em 1em 0 1em;
+    gap: 1em;
+
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: .25em;
+}
+
+.search-button {
+    background: var(--clr-blue);
+    border: none;
+    box-shadow: none;
+    color: var(--clr-light);
+    cursor: pointer;
+    height: 3em;
+    width: 5em;
+}
+
+input {
+    height: 3em;
+    width: 26em;
+    background-color: var(--clr-block);
+    color: var(--clr-dark);
+    border: solid var(--clr-orange) .2em;
+}
+
+.title-listcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-listcontainer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 7em;
+    width: 22em;
+}
+
+.title-listcontainer p {
+    color: var(--clr-gray);
+    white-space: nowrap;
+    padding-top: .4em;
+}
+
+.title-listcontainer h2 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    justify-content: center;
+    white-space: pre;
+}
+
+/* styling-listcontainer */
+.list-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 10em);
+    grid-template-rows: repeat(3, 12.2em);
+    gap: 2em;
+    padding: 2.5em 0;
+}
+
+.list-container > article {
+    background-color: var(--clr-block);
+    width: 10em;
+    overflow: hidden;
+    position: relative;
+    border-bottom: .8em solid var(--clr-orange);
+}
+
+.list-container article:nth-of-type(1) {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+.list-container article:nth-of-type(2) {
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+.list-container article:nth-of-type(3) {
+    display: grid;
+    grid-column: 1 / 1 ;
+    grid-row: 2 / 2;
+}
+.list-container article:nth-of-type(4) {
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+.list-container article:nth-of-type(5) {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+.list-container article:nth-of-type(5) {
+    display: grid;
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.list-container > article:hover {
+    background-color: var(--clr-blockhover);
+    transition: 0.4s ease-in;
+}
+
+.list-container img {
+    flex-direction: column;
+    height: 7em;
+    position: relative;
+}
+
+.list-container img:nth-of-type(1){
+    width: 5.5em;
+    object-fit: cover;
+}
+.list-container img:nth-of-type(2){
+    width: 4.15em;
+    height: 3.3em;
+    object-fit: cover;
+    overflow: hidden;
+}
+.list-container img:nth-of-type(3){
+    width: 4.15em;
+    height: 3.3em;
+    object-fit: cover;
+    position: absolute;
+    right: .05em;
+}
+
+.list-container h3 {
+    color: var(--clr-dark);
+    padding-left: .35em;
+    padding-top: .25em;
+    font-size: 1.3em;
+}
+
+.list-info {
+    display: flex;
+    flex-direction: row;
+    padding-left: .35em;
+    padding-top: .5em;
+    gap: .5em;
+}
+
+.list-info p {
+    color: var(--clr-dark);
+}
+
+.heart-list {
+    color: var(--clr-orange);
+}
+
+.accounthuman-list {
+    color: var(--clr-icon);
+    height: 2em;
+    padding-bottom: .6em;
+}
+
+.add-list {
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.add-list h3 {
+    justify-content: center;
+    margin: 0em .8em;
+    padding: 0 .2em;
+    text-align: center;
+    white-space: break-spaces;
+    color: var(--clr-dark);
+}
+.add-list p {
+    font-size: 8em;
+    font-weight: 600;
+    color: var(--clr-dark);
+    padding-left: .39em;
+    height: 120px;
+}
+
+/* styling-title-allhouses*/
+
+.title-allsavedhouses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-allsavedhouses article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+    width: 22em;
+    padding-bottom: .7em;
+}
+
+.title-allsavedhouses select {
+    appearance: none;
+    background-color: var(--clr-light);
+    border: 2px solid var(--clr-orange);
+    box-shadow: none;
+    color: var(--clr-dark);
+    cursor: pointer;
+    height: 3em;
+    padding: 0 1rem;
+    width: 10em;
+    transition: border .25s cubic-bezier(.23,1,.32,1);
+}
+
+.bottom-line {
+    height: .1em;
+    width: 22em;
+    background: var(--clr-orange);
+}
+
+/* styling-list-allhouses*/
+
+.saved-by-user {
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.saved-by-user article {
+    border-bottom: 0.1em solid var(--clr-orange);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.5em;
+    position: relative;
+    width: 22em;
+}
+
+.saved-by-user img {
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.saved-by-user .adres {
+    padding-left: .7em;
+}
+
+.saved-by-user svg {
+    display: flex;
+    position: absolute;
+    right: 0em;
+}
+
+.saved-by-user a {
+    color: var(--clr-blue);
+    transition: color .25s cubic-bezier(.23,1,.32,1);
+}
+
+h4 {
+    color: var(--clr-blue);
+    font-size: 1.5em;
+
+}
+
+@media (min-width:670px) {
+    .title-listcontainer article {
+        gap: 19em;
+        width: 34em;
+    }
+    .list-container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 10em);
+        grid-template-rows: repeat(2, 12.2em);
+        gap: 2em;
+        padding: 2.5em 0;
+    }
+    .list-container > article {
+        width: 10em;
+        overflow: hidden;
+        position: relative;
+    }
+    .list-container article:nth-of-type(1) {
+        display: grid;
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+    .list-container article:nth-of-type(2) {
+        display: grid;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    .list-container article:nth-of-type(3) {
+        display: grid;
+        grid-column: 3 / 3 ;
+        grid-row: 2 / 2;
+    }
+    .list-container article:nth-of-type(4) {
+        display: grid;
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+    }
+    .list-container article:nth-of-type(5) {
+        display: grid;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+    .list-container article:nth-of-type(6) {
+        display: grid;
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+    input {
+        width: 38.5em;
+    }
+    .search-button {
+        width: 10em;
+    }
+    .saved-by-user article {
+        width: 34em;
+    }
+    .saved-by-user img {
+        object-fit: cover;
+        width: 11em;
+        margin: 0;
+    }
+    .saved-by-user .adres {
+        padding-left: 3em;
+    }
+    .bottom-line {
+        width: 34em;
+    }
+
+    .title-allsavedhouses article {
+        gap: 14em;
+        width: 34em;
+    }
+}
+
+@media (min-width:987px) {
+    .title-listcontainer article {
+        gap: 43em;
+        width: 58em;
+    }
+    .list-container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, 18em);
+        grid-template-rows: repeat(2, 11em);
+        gap: 2em;
+        padding: 2.5em 0;
+    }
+    .list-container > article {
+        width: 18em;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .list-container img {
+        flex-direction: column;
+        height: 7em;
+        position: relative;
+    }
+    
+    .list-container img:nth-of-type(1){
+        width: 8em;
+        object-fit: cover;
+    }
+    .list-container img:nth-of-type(2){
+        width: 5.2em;
+        height: 7em;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .list-container img:nth-of-type(3){
+        width: 4.3em;
+        height: 7em;
+        object-fit: cover;
+        position: absolute;
+        right: .05em;
+    }
+    .list-info {
+        color: #333;
+        display: flex;
+        flex-direction: row;
+        padding-left: 10.8em;
+        gap: .5em;
+        position: absolute;
+        bottom: .5em;
+    }
+    .accounthuman-list {
+        height: 2em;
+        padding-bottom: .6em;
+    }
+    .add-list {
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+    }
+    .add-list h3 {
+        justify-content: center;
+        margin: 0em .8em;
+        padding: 0 .2em;
+    }
+    .add-list p {
+        padding-left: .59em;
+    }
+
+    .saved-by-user article {
+        width: 58em;
+    }
+    .saved-by-user img {
+        object-fit: cover;
+        width: 18em;
+        margin: 0;
+    }
+    .saved-by-user .adres {
+        padding-left: 4em;
+    }
+    .bottom-line {
+        width: 58em;
+    }
+
+    .title-allsavedhouses article {
+        gap: 38em;
+        width: 58em;
+    }
+}
