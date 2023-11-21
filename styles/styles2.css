@@ -1,9 +1,65 @@
 * {
     box-sizing: border-box;
 }
+   /* DARK MODE EN HIGH CONTRAST MODE */
+:root {
+    --clr-dark: #333;
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #dedede;
+    --clr-orange: #F7A100;
+    --clr-blue:#0071B3;
+}
+
+.dark-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light: #1f2123;
+    --clr-block: #1a1d1f;
+    --clr-blue:#60C5F8;
+    --clr-gray: #999999;
+    --clr-orange: #F7A100;
+}
+
+.contrast-mode {
+    --clr-dark: #1F2123;
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #999999;
+    --clr-orange: #53241B;
+    --clr-dark-orange: #321610;
+    --clr-icon: #53241B;
+    --clr-blue: #115D92;
+    --clr-heart: #DB1D10;
+    --clr-gray: #525252;
+    
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-orange);
+}
+
+.theme-toggle-contrast {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-orange);
+}
+
+.colour-modes {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 1em 1em 0 1em;
+    gap: 1.5em;
+}
 
 body {
-    background: #FFFFFF;
+    background: var(--clr-light);
+    color: var(--clr-dark);
     font-family:"Proxima Nova", sans-serif;
     margin: 0;
 }
@@ -11,10 +67,10 @@ body {
 h6 {
     width: 10000px;
     height: 5em;
-    color: #333;
+    color: var(--clr-dark);
     font-weight: 800;
-    background: #F7A100;
-    margin-top: 0em;
+    background: var(--clr-orange);
+    margin: 0em;
 }
 
 @font-face {
@@ -41,22 +97,22 @@ main {
 .back-icon {
     left: 0.5em;
     position: absolute;
-    top: 5.5em;
-   
+    top: 4em;
 }
 
 .edit-icon {
     position: absolute;
-    right: 0.5em;
-    top: 6em;
+    left: 1em;
+    top: 8em;
 }
 
 h1 {
-    color: #333333;
+    color: var(--clr-dark);
     font-size: 2.25em;
     font-weight: 600;
     line-height: 1.5;
-    margin-top: 3em;
+    margin-top: 0em;
+    padding: 0.5em 0 0.5em 0;
     text-align: center;
 }
 
@@ -67,17 +123,17 @@ form {
 form button {
     background: none;
     border: none;
-    color: #0071b3;
+    color: var(--clr-blue);
     cursor: pointer;
     font-size: 48px;
 }
 
-/* POP-UP BIJDRAGER TOEVOEGEN */
+   /* POP-UP BIJDRAGER TOEVOEGEN */
 
 .popup {
-    background: #EDEDED;
+    background: var(--clr-block);
     border-radius: 8px;
-    color: #333333;
+    color: var(--clr-dark);
     height: 10em;
     margin-left: 10em;
     padding: 1em;
@@ -103,20 +159,20 @@ body.open-popup {
 }
 
 .popup input {
-    border: solid 0.1em #F7A100;
+    border: solid 0.1em var(--clr-orange);
     font-size: 16px;
     height: 2em;
     outline: none;
 }
 
 .popup input:focus {
-    border: solid 0.2em #F7A100;
+    border: solid 0.2em var(--clr-orange);
 }
 
 .add-user-button {
     background: transparent;
     border: 0.1em;
-    color: #333333;
+    color: var(--clr-dark);
     font-size: 1em;
     position: absolute;
     top: 7em;
@@ -127,13 +183,13 @@ body.open-popup {
 }
 
 .add-user-button:hover {    
-    color: #F7A100;
+    color: var(--clr-orange);
 }
 
 .close-button {
     background-color: transparent;
     border: 0em;
-    color: #333333;
+    color: var(--clr-dark);
     font-size: 2em;
     position: absolute;
     right: 0em;
@@ -144,7 +200,7 @@ body.open-popup {
 
 .close-button:hover {
     background-color: transparent;
-    color:#F7A100;
+    color: var(--clr-orange);
     position: absolute;
     top: 0em;
     right: 0em;
@@ -156,9 +212,9 @@ p {
 
 a {
     text-decoration: none;
-    color: #0071b3;
+    color: var(--clr-blue);
 }
-
+  /* HUIZENLIJST */
 ul {
     line-height: 1.5em;
     list-style: none;
@@ -176,48 +232,61 @@ article li:nth-child(3n+2) {
 }
     
 article > li:last-child {
-    color: #0071b3;
+    color: var(--clr-blue);
     margin-top: 1.5em;
 }
 
 .house {
-    margin: 0 0.5em 0 0.5em;
-    padding: 1.3em;
+    margin: 0em;
+    padding: 0.5em 0em 0.5em 1em;
     border-bottom: solid #ccc 0.1em ;
 }
 
 .house:first-child {
-    border-top: solid #F7A100 0.1em ;
+    border-top: solid var(--clr-orange) 0.1em ;
 }
 
 .house:last-child {
     border: none;
 }
+  /* COMMENT PLAATSEN */
+.new-message {
+    display: flex;
+}
 
+.msg {
+    padding: 0.4em;
+    gap: 0.2em;
+}
 .place-comment {
-    background: none;
+    background: var(--clr-blue);
     border: none;
+    font-size: 16px;
+    padding: 0.5em;
+    margin: 0.5em;
+    color: var(--clr-light);
 }
 
 .place-comment:hover {
-    border: #F7A100 0.2em solid;
 }
 
 .comment-section input {
     border: none;
-    border-bottom: #F7A100 solid 0.1em;
+    border-bottom: var(--clr-orange) solid 0.1em;
     font-size: 16px;
     height: 3em;
     margin: 0.1em;
     outline: none;
+    width: 12em;
 }
 
 .comment-section input:focus {
-    border: solid 0.2em #F7A100;
+    border: solid 0.2em var(--clr-orange);
 }
 
 footer {
-    background: #EDEDED;
+    background: var(--clr-block);
+    padding: 0.2em;
 }
 
 .diensten, .informatie, .makelaars, .over-ons {
@@ -229,6 +298,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
 }
+
+.center-footer {
+    margin: 1em;
+}
+
 
 .copyright-2 {
     display: flex;
