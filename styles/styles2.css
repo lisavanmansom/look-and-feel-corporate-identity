@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    font-family:"Proxima Nova", sans-serif;
+    margin: 0;
+}
+
+h6 {
+    width: 10000px;
+    height: 5em;
+    color: #333;
+    font-weight: 800;
+    background: #F7A100;
+    margin-top: 0em;
+}
+
+@font-face {
+    font-family: "Proxima Nova", sans-serif;
+    src: url(../assets/AnyConv.com__ProximaNova-Regular_2607783814[2260].woff) format('woff'); 
+}
+
+@font-face {
+    font-family: "Proxima Nova", sans-serif;
+    src: url(../assets/AnyConv.com__ProximaNova-Bold_1760577842[2252].woff) format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
+    font-weight: 400;
+}
+
+main {
+
+}
+
+.back-icon {
+    left: 0.5em;
+    position: absolute;
+    top: 5.5em;
+   
+}
+
+.edit-icon {
+    position: absolute;
+    right: 0.5em;
+    top: 6em;
+}
+
+h1 {
+    color: #333333;
+    font-size: 2.25em;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 3em;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    background: none;
+    border: none;
+    color: #0071b3;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+/* POP-UP BIJDRAGER TOEVOEGEN */
+
+.popup {
+    background: #EDEDED;
+    border-radius: 8px;
+    color: #333333;
+    height: 10em;
+    margin-left: 10em;
+    padding: 1em;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    visibility: hidden;
+    width: 19em;
+    z-index: 100;
+}
+
+.open-popup {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+body.open-popup {
+    height: 100vh;
+    overflow: hidden;
+    padding-right: 15px;
+}
+
+.popup input {
+    border: solid 0.1em #F7A100;
+    font-size: 16px;
+    height: 2em;
+    outline: none;
+}
+
+.popup input:focus {
+    border: solid 0.2em #F7A100;
+}
+
+.add-user-button {
+    background: transparent;
+    border: 0.1em;
+    color: #333333;
+    font-size: 1em;
+    position: absolute;
+    top: 7em;
+    left: 5em;
+    transition: all 0.2 ease-in;
+    cursor: pointer; 
+    padding: 0.65em 0 0.65em 0;
+}
+
+.add-user-button:hover {    
+    color: #F7A100;
+}
+
+.close-button {
+    background-color: transparent;
+    border: 0em;
+    color: #333333;
+    font-size: 2em;
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    transition: all 0.2 ease-in;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: transparent;
+    color:#F7A100;
+    position: absolute;
+    top: 0em;
+    right: 0em;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #0071b3;
+}
+
+ul {
+    line-height: 1.5em;
+    list-style: none;
+    padding-left: 0;
+}
+
+article li:first-child {
+    font-weight: bold;
+    line-height: 1.5;
+}
+    
+article li:nth-child(3n+2) {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+    
+article > li:last-child {
+    color: #0071b3;
+    margin-top: 1.5em;
+}
+
+.house {
+    margin: 0 0.5em 0 0.5em;
+    padding: 1.3em;
+    border-bottom: solid #ccc 0.1em ;
+}
+
+.house:first-child {
+    border-top: solid #F7A100 0.1em ;
+}
+
+.house:last-child {
+    border: none;
+}
+
+.place-comment {
+    background: none;
+    border: none;
+}
+
+.place-comment:hover {
+    border: #F7A100 0.2em solid;
+}
+
+.comment-section input {
+    border: none;
+    border-bottom: #F7A100 solid 0.1em;
+    font-size: 16px;
+    height: 3em;
+    margin: 0.1em;
+    outline: none;
+}
+
+.comment-section input:focus {
+    border: solid 0.2em #F7A100;
+}
+
+footer {
+    background: #EDEDED;
+}
+
+.diensten, .informatie, .makelaars, .over-ons {
+    margin: 2em;
+    line-height: 1.25em;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2em;
+}
+
+.switch-language {
+    margin: 0 0 0 7em;
+}
