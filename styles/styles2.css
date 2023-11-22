@@ -31,7 +31,7 @@
     --clr-blue: #115D92;
     --clr-heart: #DB1D10;
     --clr-gray: #525252;
-    
+
 }
 
 .theme-toggle {
@@ -64,6 +64,10 @@ body {
     margin: 0;
 }
 
+svg {
+    color: var(--clr-blue)
+}
+
 h6 {
     width: 10000px;
     height: 5em;
@@ -88,10 +92,6 @@ h6 {
     font-family: "Proxima Nova";
     src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
     font-weight: 400;
-}
-
-main {
-
 }
 
 .back-icon {
@@ -214,7 +214,9 @@ a {
     text-decoration: none;
     color: var(--clr-blue);
 }
+
   /* HUIZENLIJST */
+
 ul {
     line-height: 1.5em;
     list-style: none;
@@ -237,9 +239,9 @@ article > li:last-child {
 }
 
 .house {
-    margin: 0em;
-    padding: 0.5em 0em 0.5em 1em;
     border-bottom: solid #ccc 0.1em ;
+    margin: 0em 0.5em 0em 0.5em;
+    padding: 0.5em 2em 0.5em 2.6em;
 }
 
 .house:first-child {
@@ -255,8 +257,10 @@ article > li:last-child {
 }
 
 .msg {
+    border: var(--clr-light) solid 0.1em;
+    box-shadow: 0 3px 10px var(--clr-block);
     padding: 0.4em;
-    gap: 0.2em;
+    margin: 0.4em;
 }
 .place-comment {
     background: var(--clr-blue);
@@ -311,5 +315,69 @@ footer {
 }
 
 .switch-language {
-    margin: 0 0 0 7em;
+    text-align: center;
+    margin: 1em;
+}
+
+@media (min-width:500px) {
+    .house {
+    border-bottom: solid #ccc 0.1em ;
+    margin: 0em 0.5em 0em 0.5em;
+    padding: 0.5em 4em 0.5em 6em;
+    }
+}
+
+@media (min-width:700px) {
+    .house {
+        display: flex;
+        gap: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .house img, .adres {
+        height: 180px;
+        width: 220px;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .center-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .switch-language {
+       text-align: center;
+       margin: 1em;
+    }
+}
+
+@media (min-width:900px) {
+    .house {
+        gap:3em;
+        margin: 0em 2em 0em 2em;
+        padding: 1em 1em 1em 1em;
+    }
+
+    .house img, .adres {
+        height: 200px;
+        width: 280px;
+    } 
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+    }
+
+    .socials, .center-footer {
+        gap: 1.5em;
+    }
 }
