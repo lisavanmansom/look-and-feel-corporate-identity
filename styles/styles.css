@@ -44,7 +44,7 @@ main {
     --clr-gray: #666666;
     --clr-dark: #1F2123;
     --clr-dark-orange: #DE9000;
-    --clr-orange: #F7A100;
+    --clr-primair-50: #F7A100;
     --clr-icon: #DE9000;
     --clr-heart: #f03c2f;
     --clr-blue:#0071B3;
@@ -64,7 +64,7 @@ main {
     --clr-block: #ededed;
     --clr-blockhover: #999999;
     --clr-gray: #525252;
-    --clr-orange: #53241B;
+    --clr-primair-50: #53241B;
     --clr-icon: #53241B;
     --clr-dark-orange: #321610;
     --clr-dark: #1F2123;
@@ -95,7 +95,7 @@ a {
 
 /* nav styling */
 header {
-    background: var(--clr-orange);
+    background: var(--clr-primair-50);
 }
 
 .navbar {
@@ -144,13 +144,13 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--clr-orange);
+    color: var(--clr-primair-50);
 }
 .theme-toggle-contrast {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--clr-orange);
+    color: var(--clr-orprimair-50ange);
 }
 .colour-modes {
     align-items: end;
