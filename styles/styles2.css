@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
+    padding: 0em;
+    margin: 0em;
 }
-   /* DARK MODE EN HIGH CONTRAST MODE */
+
+   /*  KLEUREN */
 
 :root {
     --clr-dark: #333;
@@ -17,11 +20,14 @@ body {
     color: var(--clr-dark);
     font-family:"Proxima Nova", sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 main {
     width: 100%;
 }
+
+   /* FONTS */
 
 @font-face {
     font-family: "Proxima Nova", sans-serif;
@@ -39,6 +45,8 @@ main {
     src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
     font-weight: 400;
 }
+
+   /* DARK MODE EN HIGH CONTRAST MODE */
 
 .dark-mode {
     --clr-dark: #FFFFFF;
@@ -84,25 +92,70 @@ main {
     gap: 1.5em;
 }
 
-h6 {
-    width: 10000px;
-    height: 5em;
-    color: var(--clr-dark);
-    font-weight: 800;
+   /* NAVIGATIE */
+
+   header {
     background: var(--clr-primair-50);
-    margin: 0em;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    height: 4em;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    align-items: start;
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    padding-left: 2em;
+    width: 100%;
+}
+
+.bar {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    width: 25px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.heart, .account-human{
+    color: #fff;
+    height: 2em;
+    margin: auto 5px;
+}
+
+.heart:hover {
+    color: #f60505;
+}
+
+nav a {
+    color: var(--clr-light);
 }
 
 .back-icon {
     left: 0.5em;
     position: absolute;
-    top: 4em;
+    top: 5em;
+    cursor: pointer;
 }
 
 .edit-icon {
     position: absolute;
     left: 1em;
     top: 8em;
+    cursor: pointer;
 }
 
 h1 {
@@ -134,7 +187,7 @@ form button {
     border-radius: 8px;
     color: var(--clr-dark);
     height: 10em;
-    margin-left: 10em;
+    margin-left: 11em;
     padding: 1em;
     position: fixed;
     transform: translate(-50%, -50%) scale(0.1);
@@ -162,6 +215,7 @@ body.open-popup {
     font-size: 16px;
     height: 2em;
     outline: none;
+    margin: 2em;
 }
 
 .popup input:focus {
@@ -209,9 +263,14 @@ p {
     text-align: center;
 }
 
-a {
+footer a {
     text-decoration: none;
     color: var(--clr-secundair-50);
+}
+
+a {
+    color: var(--clr-secundair-50);
+    text-decoration: none;
 }
 
   /* HUIZENLIJST */
@@ -245,15 +304,14 @@ article > li:last-child {
 
 .house:first-child {
     border-top: solid var(--clr-primair-50) 0.1em ;
+    margin-top: 1em;
 }
 
 .house:last-child {
     border: none;
+    margin-bottom: 1em;
 }
   /* COMMENT PLAATSEN */
-.new-message {
-    display: flex;
-}
 
 .msg {
     border: var(--clr-light) solid 0.1em;
@@ -261,6 +319,7 @@ article > li:last-child {
     padding: 0.4em;
     margin: 0.4em;
 }
+
 .place-comment {
     background: var(--clr-secundair-50);
     border: none;
@@ -318,7 +377,17 @@ footer {
     margin: 1em;
 }
 
+@media(min-width:420px) {
+    .popup {
+        margin-left: 13em;
+    }
+}
+
 @media (min-width:500px) {
+    .popup {
+        margin-left: 15.5em;
+    }
+
     .house {
     border-bottom: solid #ccc 0.1em ;
     margin: 0em 0.5em 0em 0.5em;
@@ -326,7 +395,46 @@ footer {
     }
 }
 
+   /* MEDIAQUERY NAV */
+
+@media (max-width:578px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        background-color: var(--clr-primair-80);
+        flex-direction: column;
+        gap: 0;
+        left: -100%;
+        position: absolute;
+        transition: 0.8s;
+        text-align: center;
+        top: 60px;
+        width: 100%;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
 @media (min-width:700px) {
+    .popup {
+        margin-left: 21.5em;
+    }
+
     .house {
         display: flex;
         gap: 1em;
@@ -359,6 +467,9 @@ footer {
 }
 
 @media (min-width:900px) {
+    .popup {
+        margin-left: 48em;
+    }
     .house {
         gap:3em;
         margin: 0em 2em 0em 2em;
@@ -368,15 +479,31 @@ footer {
     .house img, .adres {
         height: 200px;
         width: 280px;
-    } 
+    }
+    
+    .newmsg {
+        margin-top: 2.5em;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
     .footer-2 {
         display: flex;
         justify-content: space-between;
-        margin: 2em;
+        margin: 2em 6em 2em 6em;
     }
 
     .socials, .center-footer {
         gap: 1.5em;
+    }
+}
+
+@media (min-width:1050px) {
+    .house {
+        margin: 0em 6em 0em 6em;
     }
 }

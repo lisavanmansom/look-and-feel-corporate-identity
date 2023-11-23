@@ -8,9 +8,18 @@
 
     </head>
     <body>
-    
         <header>
-            <h6> HEADER </h6>
+            <nav class="navbar">
+                <div class="hamburger"> <span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+                <a class="nav-branding" href="https://www.funda.nl"><img src="https://assets.fstatic.nl/master-73814/assets/components/logo/fundawonen-logo.svg" height="36"></a>
+                <ul class="nav-menu">
+                <li class="nav-item"><a href="https://www.funda.nl/zoeken/koop?selected_area=[%22nl%22]" class="nav-link"> Kopen</a></li>
+                <li class="nav-item"><a href="https://www.funda.nl/zoeken/huur/?selected_area=%5B%22nl%22%5D" class="nav-link"> Huren</a></li>
+                <li class="nav-item"><a href="https://www.funda.nl/producten-en-diensten/verkoop-je-huis-op-funda/" class="nav-link"> Verkopen</a></li>
+            </ul>
+            <svg class="heart" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M39 9.86A10.17 10.17 0 0032 7a9.9 9.9 0 00-6 2 10.1 10.1 0 00-2 2 10.1 10.1 0 00-2-2 9.91 9.91 0 00-12 0 9.9 9.9 0 00-4 8c0 15 16 24 18 24s18-9 18-24a10 10 0 00-3-7.14zm-15 28a29.61 29.61 0 01-12.72-12.1A18.77 18.77 0 019 17a7 7 0 0113.41-2.81c.06.14.11.29.17.44a1.49 1.49 0 002.82 0c.05-.15.11-.3.17-.44A7 7 0 0139 17a18.77 18.77 0 01-2.28 8.81A29.61 29.61 0 0124 37.91z"></path></svg>
+                <a href="https://www.funda.nl/account/"><svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="24" fill="currentColor" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg></a>
+            </nav>  
         </header>
 
         <main>
@@ -24,16 +33,34 @@
                 </button>
             </article>
 
-            <a href="index.html"><img class="back-icon" src="assets/back.png" alt="back-to-previous-page" height="36"></a> 
+            <a href="index.html">
+                <svg class="back-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="36" height="30" viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                    <metadata> Created by potrace 1.16, written by Peter Selinger 2001-2019 </metadata>
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="var(--clr-primair-50)" stroke="none">
+                        <path d="M2391 3364 c-435 -438 -791 -800 -791 -804 0 -12 1581 -1600 1594 -1600 14 0 326 311 326 325 0 6 -285 295 -632 642 l-633 633 633 633 c347 347 632 637 632 642 0 14 -313 325 -327 325 -6 0 -367 -358 -802 -796z"/>
+                    </g>
+                </svg>
 
-            <img class="edit-icon" src="assets/4243273_pen_basic_app_ux_icon.png" alt="edit-icon" height="30"> 
+            </a>
+
+            <svg class="edit-icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="36" height="30" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                <metadata> Created by potrace 1.16, written by Peter Selinger 2001-2019 </metadata>
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="var(--clr-primair-50)" stroke="none">
+                    <path d="M3605 5109 c-11 -6 -827 -817 -1812 -1803 l-1793 -1791 0 -705 c0 -686 1 -706 20 -738 11 -18 34 -41 52 -52 32 -19 52 -20 726 -20 583 0 697 2 720 14 33 18 3575 3562 3591 3593 14 28 14 118 0 146 -16 31 -1318 1335 -1351 1353 -32 16 -124 18 -153 3z m600 -909 l520 -520 -203 -202 -202 -203 -522 522 -523 523 200 200 c110 110 202 200 205 200 3 0 239 -234 525 -520z m-640 -640 l520 -520 -1323 -1323 -1322 -1322 -522 523 -523 522 1320 1320 c726 726 1322 1320 1325 1320 3 0 239 -234 525 -520z m-2880 -2880 l360 -360 -363 0 -362 0 0 360 c0 198 1 360 3 360 1 0 164 -162 362 -360z"/>
+                </g>
+            </svg>
+
+            
 
             <h1> Randstad </h1>
             <form>
                 <!-- buttons, bijdragers (verwijst naar profiel) -->
-                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="48" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
-                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="48" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
-                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="48" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="36" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="36" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
+                <button type="button"> <svg class="account-human" xmlns="http://www.w3.org/2000/svg" height="36" fill="var(--clr-secundair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg> </button>
                 
                 <!-- pop-up  -->
                
@@ -439,6 +466,6 @@
                 </div>
             </div>
         </footer>
-        <script src="./main.js"></script>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
