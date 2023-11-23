@@ -14,6 +14,7 @@
     --clr-primair-50: #F7A100;
     --clr-secundair-50:#0071B3;
 }
+   /* EINDE KLEUREN */
 
 body {
     background: var(--clr-light);
@@ -144,6 +145,8 @@ nav a {
     color: var(--clr-light);
 }
 
+   /* EINDE NAVIGATIE */
+
 .back-icon {
     left: 0.5em;
     position: absolute;
@@ -269,14 +272,9 @@ p {
     text-align: center;
 }
 
-footer a {
+footer a, a {
     text-decoration: none;
     color: var(--clr-secundair-50);
-}
-
-a {
-    color: var(--clr-secundair-50);
-    text-decoration: none;
 }
 
   /* HUIZENLIJST */
@@ -284,6 +282,7 @@ a {
 h3 {
     margin-top: 0.5em;
 }
+
 ul {
     line-height: 1.5em;
     list-style: none;
@@ -306,7 +305,7 @@ article > li:last-child {
 }
 
 .house {
-    border-bottom: solid #ccc 0.1em ;
+    border-bottom: solid #ccc 0.1em;
     margin: 0em 2em 0em 2em;
     padding: 0.5em 0em 0.5em 1em;
 }
@@ -336,6 +335,7 @@ article > li:last-child {
     padding: 0.5em;
     margin: 0.5em;
     color: var(--clr-light);
+    cursor: pointer;
 }
 
 .place-comment:hover {
@@ -355,6 +355,8 @@ article > li:last-child {
     border: solid 0.2em var(--clr-primair-50);
 }
 
+   /* FOOTER */
+
 footer {
     background: var(--clr-block);
     padding: 0.2em;
@@ -367,7 +369,7 @@ footer {
 
 .socials {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 1em;
     padding: 0.5em;
 }
@@ -445,22 +447,35 @@ footer {
     }
 }
 
+@media (max-width:600px) {
+
+    article li:nth-child(3n+2) {
+        margin-top: 1.5em;
+    }
+    }
+
 @media (min-width:600px) {
     .house {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 0.6em;
         margin: 0em 1.5em 0em 1.5em;
         padding: 0.5em 0em 0.5em 0.2em;
     }
 
     .house img {
-        height: 140px;
-        width: 180px;
+        height: 120px;
+        width: 160px;
     }
 
     .adres {
         height: 140px;
         width: 200px;
+    }
+
+    .house ul {
+        line-height: 1.2;
     }
 
     h3 {
@@ -485,6 +500,13 @@ footer {
     }
 }
 
+@media (max-width:700px) {
+
+article li:nth-child(3n+2) {
+    margin-top: 0em;
+}
+}
+
 @media (min-width:700px) {
     .popup {
         margin-left: 21.5em;
@@ -502,8 +524,11 @@ footer {
     }
 
     .house {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         gap: 2em;
-        margin: 0em 4em 0em 4em;
+        margin: 0em 5em 0em 5em;
         padding: 1em 1em 1em 1em;
     }
 }
@@ -513,8 +538,11 @@ footer {
         margin-left: 48em;
     }
     .house {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         gap:3em;
-        margin: 0em 4em 0em 4em;
+        margin: 0em 5em 0em 5em;
         padding: 1em 1em 1em 1em;
     }
 
@@ -546,6 +574,18 @@ footer {
 
 @media (min-width:1050px) {
     .house {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin: 0em 6em 0em 6em;
+    }
+}
+
+@media (min-width:1200px) {
+    .house {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0em 15em 0em 15em;
     }
 }
