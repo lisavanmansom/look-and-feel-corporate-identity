@@ -43,12 +43,12 @@ main {
     --clr-light:#FFFFFF;
     --clr-gray: #666666;
     --clr-dark: #1F2123;
-    --clr-dark-orange: #DE9000;
+    --clr-primair-80: #DE9000;
     --clr-primair-50: #F7A100;
     --clr-icon: #DE9000;
     --clr-heart: #f03c2f;
-    --clr-blue:#0071B3;
-    --clr-light-blue: #E6F2F7;
+    --clr-secundair-50:#0071B3;
+    --clr-secundair-15: #E6F2F7;
 }
 .dark-mode {
     --clr-dark: #fff;
@@ -56,8 +56,8 @@ main {
     --clr-block: #333;
     --clr-blockhover: #4a4a4a;
     --clr-gray: #999999;
-    --clr-blue:#60C5F8;
-    --clr-light-blue: #006199;
+    --clr-secundair-50:#60C5F8;
+    --clr-secundair-15: #006199;
 }
 .contrast-mode {
     --clr-light:#FFFFFF;
@@ -66,9 +66,9 @@ main {
     --clr-gray: #525252;
     --clr-primair-50: #53241B;
     --clr-icon: #53241B;
-    --clr-dark-orange: #321610;
+    --clr-primair-80: #321610;
     --clr-dark: #1F2123;
-    --clr-blue: #115D92;
+    --clr-secundair-50: #115D92;
     --clr-heart: #DB1D10;
 }
 
@@ -85,7 +85,7 @@ h2 {
     white-space: pre;
 }
 h4 {
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
     font-size: 1.5em;
 }
 a {
@@ -150,7 +150,7 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--clr-orprimair-50ange);
+    color: var(--clr-primair-50);
 }
 .colour-modes {
     align-items: end;
@@ -174,7 +174,7 @@ header {
     gap: .25em;
 }
 .search-button {
-    background: var(--clr-blue);
+    background: var(--clr-secundair-50);
     border: none;
     box-shadow: none;
     color: var(--clr-light);
@@ -184,7 +184,7 @@ header {
 }
 input {
     background-color: var(--clr-block);
-    border: solid var(--clr-orange) .2em;
+    border: solid var(--clr-primair-50) .2em;
     color: var(--clr-dark);
     height: 3em;
     width: 17em;
@@ -256,7 +256,7 @@ input {
 /* Styling list-blocks, article + img + h3 + p + icons */
 .list-container > article {
     background-color: var(--clr-block);
-    border-bottom: .8em solid var(--clr-orange);
+    border-bottom: .8em solid var(--clr-primair-50);
     overflow: hidden;
     position: relative;
     width: 10em;
@@ -302,7 +302,7 @@ input {
     color: var(--clr-dark);
 }
 .heart-list {
-    color: var(--clr-orange);
+    color: var(--clr-primair-50);
 }
 .accounthuman-list {
     color: var(--clr-icon);
@@ -349,7 +349,7 @@ input {
 .title-allsavedhouses select {
     appearance: none;
     background-color: var(--clr-light);
-    border: 2px solid var(--clr-orange);
+    border: 2px solid var(--clr-primair-50);
     box-shadow: none;
     color: var(--clr-dark);
     cursor: pointer;
@@ -359,7 +359,7 @@ input {
     transition: border .25s cubic-bezier(.23,1,.32,1);
 }
 .bottom-line {
-    background: var(--clr-orange);
+    background: var(--clr-primair-50);
     height: .1em;
     width: 22em;
 }
@@ -373,7 +373,7 @@ input {
     padding-top: 1.5em;
 }
 .saved-by-user article {
-    border-bottom: 0.1em solid var(--clr-orange);
+    border-bottom: 0.1em solid var(--clr-primair-50);
     display: flex;
     flex-direction: row;
     padding-bottom: 1.5em;
@@ -392,7 +392,7 @@ input {
     right: 0em;
 }
 .saved-by-user a {
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
     transition: color .25s cubic-bezier(.23,1,.32,1);
 }
 .saved-by-user .adres {
@@ -406,7 +406,7 @@ input {
     padding: 2em 0;
 }
 .next-page a {
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
     display: flex;
     flex-direction: row;
     gap: 1em;
@@ -416,10 +416,10 @@ input {
     border-radius: .1em;
 }
 .next-page p:hover {
-    background-color: var(--clr-light-blue);
+    background-color: var(--clr-secundair-15);
 }
 .next-page p:nth-of-type(1) {
-    background-color: var(--clr-orange);
+    background-color: var(--clr-primair-50);
     color: var(--clr-light);
 }
 .next-page svg {
@@ -444,7 +444,7 @@ input {
     }
 
     .nav-menu{
-        background-color: var(--clr-dark-orange);
+        background-color: var(--clr-primair-80);
         flex-direction: column;
         gap: 0;
         left: -100%;
