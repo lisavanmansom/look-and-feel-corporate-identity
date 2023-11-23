@@ -385,6 +385,8 @@ footer {
 }
 
 .switch-language {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 1em;
     padding: 0.5em;
@@ -476,6 +478,8 @@ footer {
     }
 
     .switch-language {
+        display: flex;
+        flex-direction: column;
        text-align: center;
        margin: 1em;
     }
