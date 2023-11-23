@@ -2,59 +2,14 @@
     box-sizing: border-box;
 }
    /* DARK MODE EN HIGH CONTRAST MODE */
+
 :root {
     --clr-dark: #333;
     --clr-light:#FFFFFF;
     --clr-block: #ededed;
     --clr-blockhover: #dedede;
-    --clr-orange: #F7A100;
-    --clr-blue:#0071B3;
-}
-
-.dark-mode {
-    --clr-dark: #FFFFFF;
-    --clr-light: #1f2123;
-    --clr-block: #1a1d1f;
-    --clr-blue:#60C5F8;
-    --clr-gray: #999999;
-    --clr-orange: #F7A100;
-}
-
-.contrast-mode {
-    --clr-dark: #1F2123;
-    --clr-light:#FFFFFF;
-    --clr-block: #ededed;
-    --clr-blockhover: #999999;
-    --clr-orange: #53241B;
-    --clr-dark-orange: #321610;
-    --clr-icon: #53241B;
-    --clr-blue: #115D92;
-    --clr-heart: #DB1D10;
-    --clr-gray: #525252;
-
-}
-
-.theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--clr-orange);
-}
-
-.theme-toggle-contrast {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--clr-orange);
-}
-
-.colour-modes {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
-    padding: 1em 1em 0 1em;
-    gap: 1.5em;
+    --clr-primair-50: #F7A100;
+    --clr-secundair-50:#0071B3;
 }
 
 body {
@@ -64,17 +19,8 @@ body {
     margin: 0;
 }
 
-svg {
-    color: var(--clr-blue)
-}
-
-h6 {
-    width: 10000px;
-    height: 5em;
-    color: var(--clr-dark);
-    font-weight: 800;
-    background: var(--clr-orange);
-    margin: 0em;
+main {
+    width: 100%;
 }
 
 @font-face {
@@ -92,6 +38,59 @@ h6 {
     font-family: "Proxima Nova";
     src: url(../assets/AnyConv.com__ProximaNova-Medium_2770618388[2258].woff2);
     font-weight: 400;
+}
+
+.dark-mode {
+    --clr-dark: #FFFFFF;
+    --clr-light: #1f2123;
+    --clr-block: #1a1d1f;
+    --clr-secundair-50:#60C5F8;
+    --clr-gray: #999999;
+}
+
+.contrast-mode {
+    --clr-dark: #1F2123;
+    --clr-light:#FFFFFF;
+    --clr-block: #ededed;
+    --clr-blockhover: #999999;
+    --clr-icon: #53241B;
+    --clr-primair-50: #321610;
+    --clr-icon: #53241B;
+    --clr-secundair-50: #115D92;
+    --clr-heart: #DB1D10;
+    --clr-gray: #525252;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-primair-50);
+}
+
+.theme-toggle-contrast {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--clr-primair-50);
+}
+
+.colour-modes {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 1em 1em 0 1em;
+    gap: 1.5em;
+}
+
+h6 {
+    width: 10000px;
+    height: 5em;
+    color: var(--clr-dark);
+    font-weight: 800;
+    background: var(--clr-primair-50);
+    margin: 0em;
 }
 
 .back-icon {
@@ -123,7 +122,7 @@ form {
 form button {
     background: none;
     border: none;
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
     cursor: pointer;
     font-size: 48px;
 }
@@ -159,14 +158,14 @@ body.open-popup {
 }
 
 .popup input {
-    border: solid 0.1em var(--clr-orange);
+    border: solid 0.1em var(--clr-primair-50);
     font-size: 16px;
     height: 2em;
     outline: none;
 }
 
 .popup input:focus {
-    border: solid 0.2em var(--clr-orange);
+    border: solid 0.2em var(--clr-primair-50);
 }
 
 .add-user-button {
@@ -183,7 +182,7 @@ body.open-popup {
 }
 
 .add-user-button:hover {    
-    color: var(--clr-orange);
+    color: var(--clr-primair-50);
 }
 
 .close-button {
@@ -200,7 +199,7 @@ body.open-popup {
 
 .close-button:hover {
     background-color: transparent;
-    color: var(--clr-orange);
+    color: var(--clr-primair-50);
     position: absolute;
     top: 0em;
     right: 0em;
@@ -212,7 +211,7 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
 }
 
   /* HUIZENLIJST */
@@ -234,7 +233,7 @@ article li:nth-child(3n+2) {
 }
     
 article > li:last-child {
-    color: var(--clr-blue);
+    color: var(--clr-secundair-50);
     margin-top: 1.5em;
 }
 
@@ -245,7 +244,7 @@ article > li:last-child {
 }
 
 .house:first-child {
-    border-top: solid var(--clr-orange) 0.1em ;
+    border-top: solid var(--clr-primair-50) 0.1em ;
 }
 
 .house:last-child {
@@ -263,7 +262,7 @@ article > li:last-child {
     margin: 0.4em;
 }
 .place-comment {
-    background: var(--clr-blue);
+    background: var(--clr-secundair-50);
     border: none;
     font-size: 16px;
     padding: 0.5em;
@@ -276,7 +275,7 @@ article > li:last-child {
 
 .comment-section input {
     border: none;
-    border-bottom: var(--clr-orange) solid 0.1em;
+    border-bottom: var(--clr-primair-50) solid 0.1em;
     font-size: 16px;
     height: 3em;
     margin: 0.1em;
@@ -285,7 +284,7 @@ article > li:last-child {
 }
 
 .comment-section input:focus {
-    border: solid 0.2em var(--clr-orange);
+    border: solid 0.2em var(--clr-primair-50);
 }
 
 footer {
