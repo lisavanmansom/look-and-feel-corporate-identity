@@ -254,8 +254,8 @@ body.open-popup {
     color: var(--clr-dark);
     font-size: 2em;
     position: absolute;
-    right: 0em;
-    top: 0em;
+    right: 0.2em;
+    top: 0.2em;
     transition: all 0.2 ease-in;
     cursor: pointer;
 }
@@ -264,8 +264,6 @@ body.open-popup {
     background-color: transparent;
     color: var(--clr-primair-50);
     position: absolute;
-    top: 0em;
-    right: 0em;
 }
 
 p {
@@ -625,6 +623,10 @@ article li:nth-child(3n+2) {
 }
 
 @media (min-width:1200px) {
+    .popup {
+        margin-left: 20em;
+     }
+
     .house {
         display: flex;
         flex-direction: row;
