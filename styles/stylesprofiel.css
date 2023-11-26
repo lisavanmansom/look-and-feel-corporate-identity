@@ -9,8 +9,8 @@
 :root {
     --clr-dark: #333;
     --clr-light:#FFFFFF;
-    --clr-block: #dcdcdc;
-    --clr-blockhover: #ededed;
+    --clr-block: #ededed;
+    --clr-blockhover: #F7F7F7;
     --clr-primair-50: #F7A100;
     --clr-secundair-50:#0071B3;
 }
@@ -181,7 +181,6 @@ ul {
     margin-bottom: 1.5em;
     padding: 1em;
     line-height: 2em;
-    max-width: 330px;
 }
 
 h1 {
@@ -327,7 +326,8 @@ footer a {
 
     .block {
         box-shadow: 0 3px 10px var(--clr-blockhover);
-        margin: 1em;
+        margin: 1em;    
+        max-width: 330px;
     }
 }
 
