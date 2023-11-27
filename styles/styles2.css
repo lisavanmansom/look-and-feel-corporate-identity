@@ -9,7 +9,6 @@
 :root {
     --clr-contrast-100: #333;
     --clr-contrast-0:#FFFFFF;
-    --clr-nav-a: #FFFFFF; 
     --clr-block: #ededed;
     --clr-blockhover: #dedede;
     --clr-primair-50: #F7A100;
@@ -50,15 +49,16 @@ main {
 
    /* DARK MODE EN HIGH CONTRAST MODE */
 
-   @media (prefers-color-scheme:dark) {
-    body {
-        --clr-contrast-100: #FFFFFF;
-        --clr-contrast-0: #1f2123;
-        --clr-block: #1a1d1f;
-        --clr-secundair-50:#60C5F8;
-        --clr-contrast-30: #999999;
+   @media (prefers-color-scheme:dark){
+body { 
+    --clr-contrast-100: #FFFFFF;
+    --clr-contrast-0: #1f2123;
+    --clr-nav-a: #FFFFFF; 
+    --clr-block: #1a1d1f;
+    --clr-secundair-50:#60C5F8;
+    --clr-contrast-30: #999999;
     }
-   }
+}
 
 .light-mode {
     --clr-contrast-100: #333;

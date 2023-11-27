@@ -17,13 +17,13 @@ const themeToggleBtn = document.querySelector('.theme-toggle');
 const theme = localStorage.getItem('theme');
 
 if (theme) { 
-    document.body.classList.add('dark-mode');
+    document.body.classList.add('light-mode');
 }
 
 themeToggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'darkmode'); localStorage.removeItem('theme2');
+    document.body.classList.toggle('light-mode');
+    if (document.body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light'); localStorage.removeItem('theme2');
     } else {
         localStorage.removeItem('theme');
     }
