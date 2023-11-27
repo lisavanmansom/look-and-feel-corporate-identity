@@ -23,8 +23,8 @@
 }
 
 body {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-contrast-0);
+    color: var(--clr-contrast-100);
     display: flex;
     flex-direction: column;
     font-family: "Proxima Nova", sans-serif;
@@ -40,9 +40,9 @@ main {
 :root {
     --clr-block: #ededed;
     --clr-blockhover: #dedede;
-    --clr-light:#FFFFFF;
-    --clr-gray: #666666;
-    --clr-dark: #1F2123;
+    --clr-contrast-0:#FFFFFF;
+    --clr-contrast-50: #666666;
+    --clr-contrast-100: #1F2123;
     --clr-primair-80: #DE9000;
     --clr-primair-50: #F7A100;
     --clr-icon: #DE9000;
@@ -51,23 +51,23 @@ main {
     --clr-secundair-15: #E6F2F7;
 }
 .dark-mode {
-    --clr-dark: #fff;
-    --clr-light: #1F2123;
+    --clr-contrast-100: #fff;
+    --clr-contrast-0: #1F2123;
     --clr-block: #333;
     --clr-blockhover: #4a4a4a;
-    --clr-gray: #999999;
+    --clr-contrast-50: #999999;
     --clr-secundair-50:#60C5F8;
     --clr-secundair-15: #006199;
 }
 .contrast-mode {
-    --clr-light:#FFFFFF;
+    --clr-contrast-0:#FFFFFF;
     --clr-block: #ededed;
     --clr-blockhover: #999999;
-    --clr-gray: #525252;
+    --clr-contrast-50: #525252;
     --clr-primair-50: #53241B;
     --clr-icon: #53241B;
     --clr-primair-80: #321610;
-    --clr-dark: #1F2123;
+    --clr-contrast-100: #1F2123;
     --clr-secundair-50: #115D92;
     --clr-heart: #DB1D10;
 }
@@ -177,7 +177,7 @@ header {
     background: var(--clr-secundair-50);
     border: none;
     box-shadow: none;
-    color: var(--clr-light);
+    color: var(--clr-contrast-0);
     cursor: pointer;
     height: 3em;
     width: 5em; 
@@ -185,7 +185,7 @@ header {
 input {
     background-color: var(--clr-block);
     border: solid var(--clr-primair-50) .2em;
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
     height: 3em;
     width: 17em;
 }
@@ -204,7 +204,7 @@ input {
     width: 22;
 }
 .title-listcontainer p {
-    color: var(--clr-gray);
+    color: var(--clr-contrast-50);
     padding-top: .4em;
     white-space: nowrap;
 }
@@ -288,7 +288,7 @@ input {
     width: 4.15em;
 }
 .list-container h3 {
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
     font-size: 1.3em;
     padding: .25em 0 0 .35em;
 }
@@ -299,7 +299,7 @@ input {
     padding: .5em 0 0 .35em;
 }
 .list-info p {
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
 }
 .heart-list {
     color: var(--clr-primair-50);
@@ -317,7 +317,7 @@ input {
     position: relative;
 }
 .add-list h3 {
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
     justify-content: center;
     margin: 0 .8em;
     padding: 0 .2em;
@@ -325,7 +325,7 @@ input {
     white-space: break-spaces;
 }
 .add-list p {
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
     font-size: 8em;
     font-weight: 600;
     height: 120px;
@@ -348,10 +348,10 @@ input {
 }
 .title-allsavedhouses select {
     appearance: none;
-    background-color: var(--clr-light);
+    background-color: var(--clr-contrast-0);
     border: 2px solid var(--clr-primair-50);
     box-shadow: none;
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
     cursor: pointer;
     height: 3em;
     /* padding: 0 1rem; */
@@ -420,7 +420,7 @@ input {
 }
 .next-page p:nth-of-type(1) {
     background-color: var(--clr-primair-50);
-    color: var(--clr-light);
+    color: var(--clr-contrast-0);
 }
 .next-page svg {
     height: 2em;
