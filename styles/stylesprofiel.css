@@ -7,8 +7,9 @@
    /*  KLEUREN */
 
 :root {
-    --clr-dark: #333;
-    --clr-light:#FFFFFF;
+    --clr-contrast-100: #333;
+    --clr-contrast-0:#FFFFFF;
+    --clr-nav-a:#FFFFFF; 
     --clr-block: #ededed;
     --clr-blockhover: #F7F7F7;
     --clr-primair-50: #F7A100;
@@ -17,8 +18,8 @@
    /* EINDE KLEUREN */
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-contrast-0);
+    color: var(--clr-contrast-100);
     font-family:"Proxima Nova", sans-serif;
     margin: 0;
     overflow-x: hidden;
@@ -49,18 +50,30 @@ main {
 
    /* DARK MODE EN HIGH CONTRAST MODE */
 
-.dark-mode {
-    --clr-dark: #FFFFFF;
-    --clr-light: #1f2123;
-    --clr-block: #1a1d1f;
-    --clr-blockhover: #151819;
-    --clr-secundair-50:#60C5F8;
-    --clr-gray: #999999;
+   @media (prefers-color-scheme:dark) {
+    body {
+        --clr-contrast-100: #FFFFFF;
+        --clr-contrast-0: #1f2123;
+        --clr-block: #1a1d1f;
+        --clr-blockhover: #0f1010;
+        --clr-secundair-50:#60C5F8;
+        --clr-contrast-30: #999999;
+    }
+   }
+
+.light-mode {
+    --clr-contrast-100: #333;
+    --clr-contrast-0:#FFFFFF;
+    --clr-nav-a: #FFFFFF; 
+    --clr-block: #ededed;
+    --clr-blockhover: #dedede;
+    --clr-primair-50: #F7A100;
+    --clr-secundair-50:#0071B3;
 }
 
 .contrast-mode {
-    --clr-dark: #1F2123;
-    --clr-light:#FFFFFF;
+    --clr-contrast-100: #1F2123;
+    --clr-contrast-0:#FFFFFF;
     --clr-block: #ededed;
     --clr-blockhover: #999999;
     --clr-icon: #53241B;
@@ -68,7 +81,7 @@ main {
     --clr-icon: #53241B;
     --clr-secundair-50: #115D92;
     --clr-heart: #DB1D10;
-    --clr-gray: #525252;
+    --clr-contrast-70: #525252;
 }
 
 .theme-toggle {
@@ -133,7 +146,7 @@ main {
 }
 
  .heart, .account-human-nav{
-    color: var(--clr-light);
+    color: var(--clr-nav-a);
     height: 2em;
     margin: auto 5px;
 }
@@ -143,7 +156,7 @@ main {
 }
 
 nav a {
-    color: var(--clr-light);
+    color: var(--clr-nav-a);
 }
 
 ul {
@@ -175,7 +188,7 @@ ul {
 }
 
 .block {
-    background: var(--clr-light);
+    background: var(--clr-contrast-0);
     border: 0 solid;
     display: block;
     margin-bottom: 1.5em;
@@ -204,7 +217,7 @@ h2, p {
 }
 
 p {
-    color: var(--clr-dark);
+    color: var(--clr-contrast-100);
 }
 
 a {
