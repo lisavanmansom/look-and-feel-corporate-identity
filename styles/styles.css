@@ -428,6 +428,53 @@ input {
     width: 2em;
 }
 
+   /* FOOTER */
+
+   footer {
+    background: var(--clr-block);
+    padding: 0.2em;
+}
+
+    footer a {
+    color: var(--clr-secundair-50);
+}
+
+    footer h4 {
+        color: var(--clr-contrast-100);
+    }
+
+    .diensten, .informatie, .makelaars, .over-ons {
+    margin: 2em;
+    line-height: 1.25em;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+.center-footer {
+    margin: 1em;
+    padding: 0.5em;
+}
+
+
+.copyright-2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2em;
+}
+
+.switch-language {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+}
+
 /* Mediaquery nav */
 @media (max-width:578px){
     .hamburger{
@@ -459,6 +506,23 @@ input {
     }
     .nav-menu.active {
         left: 0;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .center-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .switch-language {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 1em 1em 15em;
+        width: 6em;
     }
 }
 
@@ -622,5 +686,14 @@ input {
     .title-allsavedhouses article {
         gap: 38.5em;
         width: 38.5em;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .footer-nav ul {
+        line-height: 1.5;
     }
 }

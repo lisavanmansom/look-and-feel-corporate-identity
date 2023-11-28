@@ -381,6 +381,7 @@ footer {
 .diensten, .informatie, .makelaars, .over-ons {
     margin: 2em;
     line-height: 1.25em;
+    display: contents;
 }
 
 .socials {
