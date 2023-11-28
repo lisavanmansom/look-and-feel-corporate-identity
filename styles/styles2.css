@@ -354,6 +354,7 @@ article > li:last-child {
 }
 
 .comment-section input {
+    background: var(--clr-block);
     border: none;
     border-bottom: var(--clr-primair-50) solid 0.1em;
     font-size: 16px;
