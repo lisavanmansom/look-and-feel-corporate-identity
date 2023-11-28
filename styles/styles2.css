@@ -383,7 +383,6 @@ footer {
 .diensten, .informatie, .makelaars, .over-ons {
     margin: 2em;
     line-height: 1.25em;
-    display: contents;
 }
 
 .socials {
@@ -490,7 +489,7 @@ footer {
     }
 
     .house ul {
-        width: 180px;
+        width: 175px;
         height: 140px;
         line-height: 1.2;
     }
