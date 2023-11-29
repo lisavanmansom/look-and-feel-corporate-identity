@@ -119,6 +119,7 @@ header {
 
 .nav-menu {
     align-items: start;
+    background-color: var(--clr-primair-50);
     display: flex;
     gap: 30px;
     justify-content: start;

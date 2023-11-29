@@ -13,7 +13,45 @@
     --clr-blockhover: #dedede;
     --clr-primair-50: #F7A100;
     --clr-secundair-50:#0071B3;
+    --clr-primair-80:#DE9000; 
 }
+   /* DARK MODE EN CONTTRAST MODE */
+
+
+@media (prefers-color-scheme:dark){
+    body { 
+        --clr-contrast-100: #FFFFFF;
+        --clr-contrast-0: #1f2123;
+        --clr-nav-a: #FFFFFF; 
+        --clr-block: #1a1d1f;
+        --clr-secundair-50:#60C5F8;
+        --clr-contrast-30: #999999;
+        }
+    }
+    
+    .light-mode {
+        --clr-contrast-100: #333;
+        --clr-contrast-0:#FFFFFF;
+        --clr-nav-a: #FFFFFF; 
+        --clr-block: #ededed;
+        --clr-blockhover: #dedede;
+        --clr-primair-50: #F7A100;
+        --clr-secundair-50:#0071B3;
+    }
+    
+    .contrast-mode {
+        --clr-contrast-100: #1F2123;
+        --clr-contrast-0:#FFFFFF;
+        --clr-block: #ededed;
+        --clr-blockhover: #999999;
+        --clr-icon: #53241B;
+        --clr-primair-50: #53241B;
+        --clr-icon: #53241B;
+        --clr-secundair-50: #115D92;
+        --clr-heart: #DB1D10;
+        --clr-contrast-90: #525252;
+        --clr-primair-80:#321610;
+    }
    /* EINDE KLEUREN */
 
 body {
@@ -47,41 +85,7 @@ main {
     font-weight: 400;
 }
 
-   /* DARK MODE EN HIGH CONTRAST MODE */
-
-   @media (prefers-color-scheme:dark){
-body { 
-    --clr-contrast-100: #FFFFFF;
-    --clr-contrast-0: #1f2123;
-    --clr-nav-a: #FFFFFF; 
-    --clr-block: #1a1d1f;
-    --clr-secundair-50:#60C5F8;
-    --clr-contrast-30: #999999;
-    }
-}
-
-.light-mode {
-    --clr-contrast-100: #333;
-    --clr-contrast-0:#FFFFFF;
-    --clr-nav-a: #FFFFFF; 
-    --clr-block: #ededed;
-    --clr-blockhover: #dedede;
-    --clr-primair-50: #F7A100;
-    --clr-secundair-50:#0071B3;
-}
-
-.contrast-mode {
-    --clr-contrast-100: #1F2123;
-    --clr-contrast-0:#FFFFFF;
-    --clr-block: #ededed;
-    --clr-blockhover: #999999;
-    --clr-icon: #53241B;
-    --clr-primair-50: #321610;
-    --clr-icon: #53241B;
-    --clr-secundair-50: #115D92;
-    --clr-heart: #DB1D10;
-    --clr-contrast-90: #525252;
-}
+   /* DARK MODE EN HIGH CONTRAST MODE BUTTON */
 
 .theme-toggle {
     background: none;

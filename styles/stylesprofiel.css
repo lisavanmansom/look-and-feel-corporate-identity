@@ -13,6 +13,7 @@
     --clr-block: #ededed;
     --clr-blockhover: #F7F7F7;
     --clr-primair-50: #F7A100;
+    --clr-primair-80:#DE9000; 
     --clr-secundair-50:#0071B3;
 }
    /* EINDE KLEUREN */
@@ -77,7 +78,8 @@ main {
     --clr-block: #ededed;
     --clr-blockhover: #999999;
     --clr-icon: #53241B;
-    --clr-primair-50: #321610;
+    --clr-primair-50: #53241B;
+    --clr-primair-80: #321610;
     --clr-icon: #53241B;
     --clr-secundair-50: #115D92;
     --clr-heart: #DB1D10;
