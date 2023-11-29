@@ -43,10 +43,11 @@ main {
     --clr-block: #ededed;
     --clr-blockhover: #dedede;
     --clr-primair-50: #F7A100;
+    --clr-primair-80: #DE9000;
     --clr-secundair-50:#0071B3;
 }
 
-@media (prefers-color-scheme-dark) {
+@media (prefers-color-scheme:dark) {
 body {
     --clr-contrast-100: #fff;
     --clr-contrast-0: #1F2123;
