@@ -24,6 +24,8 @@ De bewaarde huizen pagina is gemaakt voor Funda, hierbij zijn we aan de slag geg
 Tijdens het developen van de pagina hebben we in HTML om structuur te maken gebruik gemaakt van code conventies. In CSS hebben we gebruik gemaakt van grid, root, mediaqueries & flexbox. We hebben gebruik gemaakt van Javascript voor de darkmode en lightmode toggle, navigatiebar en een popup.
 
 ## Bronnen
+* https://github.com/Hadil24A/look-and-feel-corporate-identity/wiki
+* https://lisavanmansom.github.io/look-and-feel-corporate-identity/
 
 ## Licentie
 
