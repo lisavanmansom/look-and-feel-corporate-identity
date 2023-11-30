@@ -173,8 +173,8 @@ nav a {
 
 .edit-icon {
     position: absolute;
-    left: 1em;
-    top: 8em;
+    right: 15em;
+    top: 15em;
     cursor: pointer;
 }
 
