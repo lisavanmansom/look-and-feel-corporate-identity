@@ -339,7 +339,6 @@ article > li:last-child {
 
 .msg {
     border-bottom: var(--clr-primair-50) solid 0.1em;
-    /* box-shadow: 0 3px 10px var(--clr-block); */
     padding: 0.4em;
     margin: 0.4em;
     width: 15em;
@@ -382,38 +381,38 @@ article > li:last-child {
 footer {
     background: var(--clr-block);
     padding: 0.2em;
-}
 
-.diensten, .informatie, .makelaars, .over-ons {
+& .diensten, .informatie, .makelaars, .over-ons {
     margin: 2em;
     line-height: 1.25em;
 }
 
-.socials {
+& .socials {
     display: flex;
     justify-content: space-between;
     margin: 1em;
     padding: 0.5em;
 }
 
-.center-footer {
+& .center-footer {
     margin: 1em;
     padding: 0.5em;
 }
 
 
-.copyright-2 {
+& .copyright-2 {
     display: flex;
     justify-content: space-around;
     gap: 0.2em;
 }
 
-.switch-language {
+& .switch-language {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 1em;
     padding: 0.5em;
+}
 }
 
 @media(min-width:420px) {
