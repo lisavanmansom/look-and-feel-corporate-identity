@@ -213,7 +213,7 @@ input {
     flex-direction: row;
     gap: 7em;
     justify-content: space-around;
-    width: 22;
+    width: 22em;
 }
 .title-listcontainer p {
     color: var(--clr-contrast-50);
@@ -232,37 +232,33 @@ input {
     grid-template-rows: repeat(3, 12.2em);
     justify-content: center;
     padding: 2.5em 0;
-    
-& article:nth-of-type(1) {
-    display: grid;
-    grid-column: 1 / 1;
-    grid-row: 1 / 1;
-}
-& article:nth-of-type(2) {
+}  
+
+.list-container article:nth-of-type(2) {
     display: grid;
     grid-column: 2 / 2;
     grid-row: 1 / 1;
 }
-& article:nth-of-type(3) {
+.list-container article:nth-of-type(3) {
     display: grid;
     grid-column: 1 / 1 ;
     grid-row: 2 / 2;
 }
-& article:nth-of-type(4) {
+.list-containerarticle:nth-of-type(4) {
     display: grid;
     grid-column: 2 / 2;
     grid-row: 2 / 2;
 }
-& article:nth-of-type(5) {
+.list-container article:nth-of-type(5) {
     display: grid;
     grid-column: 1 / 1;
     grid-row: 3 / 3;
 }
-& article:nth-of-type(5) {
+.list-container article:nth-of-type(5) {
     display: grid;
     grid-column: 2 / 2;
     grid-row: 3 / 3;
-}}
+}
 
 /* Styling list-blocks, article + img + h3 + p + icons */
 .list-container > article {
@@ -321,28 +317,82 @@ input {
     padding-bottom: .6em;
 }
 
-/* Styling list-blocks, add list */
-.add-list {
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+/* Styling pop-up styling etc */
+.list-container button:nth-child(1) {
+    background-color: var(--clr-block);
+    border: none;
+    border-bottom: .8em solid var(--clr-primair-50);
+    box-shadow: none; 
+    cursor: pointer;
 }
-.add-list h3 {
+.list-container button:nth-child(1):hover {
+    background-color: var(--clr-blockhover);
+    transition: 0.4s ease-in;
     color: var(--clr-contrast-100);
-    justify-content: center;
-    margin: 0 .8em;
-    padding: 0 .2em;
-    text-align: center;
-    white-space: break-spaces;
-}
-.add-list p {
-    color: var(--clr-contrast-100);
-    font-size: 8em;
-    font-weight: 600;
-    height: 120px;
-    padding-left: .39em;
 }
 
+.modal {
+    align-items: center;
+    background: var(--clr-block);
+    border-bottom: solid 2em var(--clr-primair-50);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+    z-index: -1;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal.open {
+    opacity: 100;
+    z-index: 1;
+}
+
+.inner-modal {
+    align-items: center;
+    display: flex;
+    gap: 1.2em;
+    flex-direction: column;
+    justify-content: center;
+    background-color: ;
+    width: 15em;
+}
+
+.inner-modal input {
+    appearance: none;
+    background-color: var(--clr-blockhover);
+    border: none;
+    border-bottom: .3em solid var(--clr-primair-50);
+    height: 2.5em;
+    margin-top: 1em;
+    width: 15em;
+}
+.inner-modal button:nth-of-type(1) {
+    background-color: var(--clr-primair-50);
+    border: none;
+    box-shadow: none;
+    color: var(--clr-contrast-0);
+    cursor: pointer;
+    height: 2.5em;
+    width: 15em;
+}
+.inner-modal button:nth-of-type(1):hover {
+    background-color: var(--clr-primair-80);
+}
+.inner-modal button:nth-of-type(2) {
+    background-color: var(--clr-block);
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 7em;
+}
 /* Styling title all-saved-houses */
 .title-allsavedhouses {
     align-items: center;
@@ -555,11 +605,6 @@ input {
         overflow: hidden;
         position: relative;
         width: 10em;
-    }
-    .list-container article:nth-of-type(1) {
-        display: grid;
-        grid-column: 1 / 1;
-        grid-row: 1 / 1;
     }
     .list-container article:nth-of-type(2) {
         display: grid;

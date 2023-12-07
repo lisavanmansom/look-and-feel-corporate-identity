@@ -54,10 +54,25 @@
         </div>
 
     <div class="list-container"><!--start lijstblokken-->
-        <article class="add-list"><a href="#">
-        <p>+</p><h3>voeg een lijst toe</h3>
-    </a></article>
-
+            <!-- pop-up button -->
+            <button type="button" id="openModal"><svg width="75" height="75" viewBox="0 0 24 24" fill="var(--clr-primair-50)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12H20M12 4V20" stroke="var(--clr-contrast-100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            <h3>Voeg een lijst toe</h3></button>
+            <!-- pop-up inhoud -->
+            <div class="modal" id="modal"><form>
+            <div class="inner-modal">
+            <label><h3>Geef je lijst een naam</h3><input type="text"></label>
+            <h3> Bijdragers</h3>
+            <svg class="account-human-profile" xmlns="http://www.w3.org/2000/svg" height="48" fill="var(--clr-primair-50)" role="presentation" viewBox="0 0 48 48"><path d="M24 9a8 8 0 108 8 8 8 0 00-8-8zm0 13a5 5 0 115-5 5 5 0 01-5 5z"></path><path d="M24 3a21 21 0 1021 21A21 21 0 0024 3zm-9 36.56V35c0-2.45 2.12-4.48 4.91-4.91A7.16 7.16 0 0121 30h6a7.16 7.16 0 011.09.09C30.88 30.52 33 32.55 33 35v4.56a17.85 17.85 0 01-18 0zm21-2.19V34.5a1.48 1.48 0 00-.06-.4c-.5-4-4.31-7.1-8.94-7.1h-6c-4.63 0-8.44 3.11-8.94 7.1a1.48 1.48 0 00-.06.4v2.88a18 18 0 1124 0z"></path></svg>
+            <!-- pop-up sluiten buttons -->
+            <button type="submit" id="closeModal">Maak</button>
+            <button id="closeModal">
+                <svg fill="var(--clr-heart)" width="30" height="30" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"/>
+            </svg>
+            </form></div></div>
+       
     <article><a href="./index2.html">
         <img src="https://cloud.funda.nl/valentina_media/180/746/920_1440x960.jpg" alt="foto van Ampèrestraat 6"> 
         <img src="https://cloud.funda.nl/valentina_media/180/468/364_1440x960.jpg" alt="foto van Hullenberglaan 19"> 
@@ -323,6 +338,7 @@
 </div>
 </footer>
 
-  <script src="./scripts/main.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/mainL.js"></script>
 </body>
 </html>
