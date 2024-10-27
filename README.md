@@ -10,7 +10,8 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 De bewaarde huizen pagina is gemaakt voor Funda, hierbij zijn we aan de slag gegaan met de styleguide van Funda om het aansluitend te maken op hun website. We hebben gekozen om een zoekbalk te maken om in alle bewaarde huizen te zoeken. Daarnaast hebben we gekozen om een functie toe te voegen dat de user zelf de lijsten kan maken, zodat ze het zelf kunnen filteren. Deze zelfgemaakte lijsten kunnen ze delen met andere users (uitnodiging sturen via mail) zodat ze samen kunnen zoeken naar hun droomhuis. In deze lijst kunnen ze ook comments achterlaten per huis. In de hoofdpagina van de bewaarde huizen pagina is daaronder ook een algemene lijst met alle gelikede huizen. Aan de bovenkant van de pagina is een zon icon (light/dark-mode) en een contrast icon (contrast-mode), hiermee kan je de kleurthema's aanpassen.
 <!-- Voeg een mooie poster visual toe 📸 -->
-<img width="1397" alt="Scherm­afbeelding 2023-11-27 om 11 06 26" src="https://github.com/lisavanmansom/look-and-feel-corporate-identity/assets/144007419/bfb4e141-8fd4-4a71-b66a-f292c81b443e">
+
+<img width="1000" alt="Scherm­afbeelding 2024-10-27 om 10 06 46" src="https://github.com/user-attachments/assets/777c19b6-5dd9-43bf-916f-e20f0ebef230">
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 [Live url](https://lisavanmansom.github.io/look-and-feel-corporate-identity/)
